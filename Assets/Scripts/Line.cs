@@ -51,6 +51,7 @@ public class Line : MonoBehaviour
 
         _line.positionCount = points.Count;
         _line.SetPosition(points.Count-1,point);
+
         if (points.Count > 1)
         {
             _line_col.points = points.ToArray();
