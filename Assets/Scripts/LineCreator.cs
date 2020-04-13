@@ -36,7 +36,7 @@ public class LineCreator : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        /*if (Input.GetMouseButtonDown(0))
         {
             //lineGo = Instantiate(linePrefab);
             CreateNewLine(false , Color.white);
@@ -53,13 +53,13 @@ public class LineCreator : MonoBehaviour
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             activeLine.UpdateLine(mousePos);
             //trailGo.transform.position = mousePos;
-        }
-        
+        }*/
+
     }
 
     public void UpdateBar(float used) {
 
-        _energy_bar.fillAmount = (200 - used) / 200;
+        _energy_bar.fillAmount = (100 - used) / 100;
 
     }
 
