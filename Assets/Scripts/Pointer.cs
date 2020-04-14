@@ -20,7 +20,7 @@ public class Pointer : MonoBehaviour
     {
         if (collision.tag == "bonus")
         {
-            LineStraight.instance.CreateLine(true);
+            LineStraight.instance.CreateLine(true, this.transform.position);
         }
     }
 }

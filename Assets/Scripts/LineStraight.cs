@@ -29,7 +29,7 @@ public class LineStraight : MonoBehaviour
 
             if (_line == null)
             {
-                CreateLine(false);
+                CreateLine(false,Vector2.zero);
             }
 
             _mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -68,11 +68,16 @@ public class LineStraight : MonoBehaviour
     }
 
 
-    public void CreateLine(bool from_pointer) {
+    public void CreateLine(bool from_pointer, Vector2 ini) {
+
         if (from_pointer)
         {
+            _line.SetPosition(1, ini);
+            _line = null;
 
+            //_line.SetPosition(1, _mouse_pos);
         }
+
 
         _line = new GameObject("Line" + _current_lines).AddComponent<LineRenderer>();
         _line.material = _material;
@@ -81,6 +86,12 @@ public class LineStraight : MonoBehaviour
         _line.endWidth = 1.15f;
         _line.useWorldSpace = true;
         _line.numCapVertices = 50;
+
+        if (from_pointer)
+        {
+            _line.SetPosition(0, ini);
+            _line.SetPosition(1, _mouse_pos);
+        }
     }
 
 }
