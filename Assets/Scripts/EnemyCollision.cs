@@ -8,15 +8,15 @@ public class EnemyCollision : MonoBehaviour
 
     BoxCollider2D collider2D;
 
-    private GameObject left;
-    private GameObject top;
-    private GameObject right;
-    private GameObject bottom;
-    private GameObject line_from;
-    private GameObject line_to;
+    private GameObject[] collision_points;
     private LineRenderer[] lines;
 
-    public static bool LineIntersection(Vector2 p1, Vector2 p2, Vector2 p3, Vector2 p4, ref Vector2 intersection)
+    Vector2 intersection_top = Vector2.zero;
+    Vector2 intersection_right = Vector2.zero;
+    Vector2 intersection_bottom = Vector2.zero;
+    Vector2 intersection_left = Vector2.zero;
+
+    public bool LineIntersection(Vector2 p1, Vector2 p2, Vector2 p3, Vector2 p4, ref Vector2 intersection)
     {
         float Ax, Bx, Cx, Ay, By, Cy, d, e, f, num, offset;
         float x1lo, x1hi, y1lo, y1hi;
@@ -107,23 +107,19 @@ public class EnemyCollision : MonoBehaviour
         return true;
     }
 
-    private static bool same_sign(float a, float b)
+    private bool same_sign(float a, float b)
     {
         return ((a * b) >= 0f);
     }
-
-
 
     // Start is called before the first frame update
     void Start()
     {
         collider2D = GetComponent<BoxCollider2D>();
-        top = Instantiate(collision_point);
-        right = Instantiate(collision_point);
-        bottom = Instantiate(collision_point);
-        left = Instantiate(collision_point);
-        line_from = Instantiate(collision_point);
-        line_to = Instantiate(collision_point);
+        collision_points = new GameObject[] {
+            Instantiate(collision_point),
+            Instantiate(collision_point)
+        };
     }
 
     // Update is called once per frame
@@ -154,39 +150,43 @@ public class EnemyCollision : MonoBehaviour
                     collider2D.offset + Vector2.Reflect(collider2D.size, Vector2.down) * .5f
                 );
 
-                Vector2 intersection_top = Vector2.zero;
-                LineIntersection(
+                List<Vector2> intersections = new List<Vector2>();
+
+                if (LineIntersection(
                     line_1_from, line_1_to, square_top_left, square_top_right,
                     ref intersection_top
-                );
-
-                Vector2 intersection_right = Vector2.zero;
-                LineIntersection(
-                    line_1_from, line_1_to,
-                    square_top_right, square_bottom_right,
+                ))
+                {
+                    intersections.Add(intersection_top);
+                }
+                if (LineIntersection(
+                    line_1_from, line_1_to, square_top_right, square_bottom_right,
                     ref intersection_right
-                );
-
-                Vector2 intersection_bottom = Vector2.zero;
-                LineIntersection(
-                    line_1_from, line_1_to,
-                    square_bottom_left, square_bottom_right,
+                ))
+                {
+                    intersections.Add(intersection_right);
+                }
+                if (LineIntersection(
+                    line_1_from, line_1_to, square_bottom_left, square_bottom_right,
                     ref intersection_bottom
-                );
-
-                Vector2 intersection_left = Vector2.zero;
-                LineIntersection(
-                    line_1_from, line_1_to,
-                    square_top_left, square_bottom_left,
+                ))
+                {
+                    intersections.Add(intersection_bottom);
+                }
+                if (LineIntersection(
+                    line_1_from, line_1_to, square_top_left, square_bottom_left,
                     ref intersection_left
-                );
+                ))
+                {
+                    intersections.Add(intersection_left);
+                }
 
-                line_from.transform.position = line_1_from;
-                line_to.transform.position = line_1_to;
-                top.transform.position = intersection_top;
-                right.transform.position = intersection_right;
-                bottom.transform.position = intersection_bottom;
-                left.transform.position = intersection_left;
+                collision_point.transform.position = intersection_top;
+                Vector2[] intersection_array = intersections.ToArray();
+                for (int i = 0; i < intersection_array.Length; i++)
+                {
+                    collision_points[i].transform.position = intersection_array[i];
+                }
             }
         }
     }
