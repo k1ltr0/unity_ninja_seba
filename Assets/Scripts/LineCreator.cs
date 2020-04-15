@@ -40,7 +40,7 @@ public class LineCreator : MonoBehaviour
         {
             //lineGo = Instantiate(linePrefab);
             CreateNewLine(false , Color.white);
-            
+
         }
 
         if (Input.GetMouseButtonUp(0))

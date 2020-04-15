@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1616644149912746771}
   m_Layer: 0
   m_Name: LineStraight
-  m_TagString: Untagged
+  m_TagString: line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,6 +160,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ca437279363fc4ab54c6a587527434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _line: {fileID: -532513024727580102}
-  _line_col: {fileID: 4356046972737099171}
-  _large: 0
+  _material: {fileID: 0}
+  _pointer: {fileID: 0}
