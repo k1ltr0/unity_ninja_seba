@@ -76,27 +76,24 @@ public class EnemyCollision : MonoBehaviour
                     square_top_left, square_top_right
                 );
 
-                top.transform.position = intersection_top;
-
                 Vector2 intersection_right = FindIntersection(
                     line_1_from, line_1_to,
                     square_top_right, square_bottom_right
                 );
-
-                left.transform.position = intersection_right;
 
                 Vector2 intersection_bottom = FindIntersection(
                     line_1_from, line_1_to,
                     square_bottom_left, square_bottom_right
                 );
 
-                bottom.transform.position = intersection_bottom;
-
                 Vector2 intersection_left = FindIntersection(
                     line_1_from, line_1_to,
                     square_top_left, square_bottom_left
                 );
 
+                top.transform.position = intersection_top;
+                right.transform.position = intersection_right;
+                bottom.transform.position = intersection_bottom;
                 left.transform.position = intersection_left;
             }
         }
