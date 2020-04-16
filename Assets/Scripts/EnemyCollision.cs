@@ -168,7 +168,11 @@ public class EnemyCollision : MonoBehaviour
     {
         if (LineStraight.instance._line != null)
         {
-            LineRenderer line = game_object.GetComponent<LineRenderer>();
+            //GameObject[] lines = LineStraight.instance._line;
+
+            //foreach (GameObject game_object in lines)
+            //{
+            LineRenderer line = LineStraight.instance._line;//game_object.GetComponent<LineRenderer>();
             bool intersects = line.bounds.Intersects(collider2D.bounds);
 
             if (intersects)
