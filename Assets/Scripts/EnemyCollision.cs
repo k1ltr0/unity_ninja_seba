@@ -166,9 +166,7 @@ public class EnemyCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject[] lines = GameObject.FindGameObjectsWithTag("line");
-
-        foreach (GameObject game_object in lines)
+        if (LineStraight.instance._line != null)
         {
             LineRenderer line = game_object.GetComponent<LineRenderer>();
             bool intersects = line.bounds.Intersects(collider2D.bounds);
@@ -181,5 +179,6 @@ public class EnemyCollision : MonoBehaviour
                 }
             }
         }
+
     }
 }

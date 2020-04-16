@@ -5,6 +5,9 @@ using UnityEngine;
 public class Pointer : MonoBehaviour
 {
     // Start is called before the first frame update
+
+
+    public GameObject _algo;
     void Start()
     {
         
@@ -18,9 +21,11 @@ public class Pointer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.tag == "bonus")
         {
             LineStraight.instance.CreateLine(true, this.transform.position);
+            //Instantiate(_algo, collision.GetContacts(0). // [0].point, Quaternion.identity);
         }
     }
 }

@@ -9,7 +9,7 @@ public class LineStraight : MonoBehaviour
 {
     public static LineStraight instance;
 
-    private LineRenderer _line;
+    public LineRenderer _line;
     private Vector3 _mouse_pos;
     public Material _material;
     private int _current_lines;
@@ -80,7 +80,6 @@ public class LineStraight : MonoBehaviour
 
 
         _line = new GameObject("Line" + _current_lines).AddComponent<LineRenderer>();
-        _line.tag = "line";
         _line.material = _material;
         _line.positionCount = 2;
         _line.startWidth = 1.15f;
