@@ -125,69 +125,72 @@ public class EnemyCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject[] lines = GameObject.FindGameObjectsWithTag("line");
-
-        foreach (GameObject game_object in lines)
+        if (LineStraight.instance._line != null)
         {
-            LineRenderer line = game_object.GetComponent<LineRenderer>();
-            bool intersects = line.bounds.Intersects(collider2D.bounds);
+            //GameObject[] lines = LineStraight.instance._line;
 
-            if (intersects)
-            {
-                Vector2 line_1_from = line.GetPosition(0);
-                Vector2 line_1_to = line.GetPosition(1);
+            //foreach (GameObject game_object in lines)
+            //{
+            LineRenderer line = LineStraight.instance._line;//game_object.GetComponent<LineRenderer>();
+                bool intersects = line.bounds.Intersects(collider2D.bounds);
 
-                Vector2 square_top_left = transform.TransformPoint(
-                    collider2D.offset + Vector2.Reflect(collider2D.size, Vector2.left) * .5f
-                );
-                Vector2 square_top_right = transform.TransformPoint(
-                    collider2D.offset + collider2D.size * .5f
-                );
-                Vector2 square_bottom_left = transform.TransformPoint(
-                    collider2D.offset - collider2D.size * .5f
-                );
-                Vector2 square_bottom_right = transform.TransformPoint(
-                    collider2D.offset + Vector2.Reflect(collider2D.size, Vector2.down) * .5f
-                );
+                if (intersects)
+                {
+                    Vector2 line_1_from = line.GetPosition(0);
+                    Vector2 line_1_to = line.GetPosition(1);
 
-                List<Vector2> intersections = new List<Vector2>();
+                    Vector2 square_top_left = transform.TransformPoint(
+                        collider2D.offset + Vector2.Reflect(collider2D.size, Vector2.left) * .5f
+                    );
+                    Vector2 square_top_right = transform.TransformPoint(
+                        collider2D.offset + collider2D.size * .5f
+                    );
+                    Vector2 square_bottom_left = transform.TransformPoint(
+                        collider2D.offset - collider2D.size * .5f
+                    );
+                    Vector2 square_bottom_right = transform.TransformPoint(
+                        collider2D.offset + Vector2.Reflect(collider2D.size, Vector2.down) * .5f
+                    );
 
-                if (LineIntersection(
-                    line_1_from, line_1_to, square_top_left, square_top_right,
-                    ref intersection_top
-                ))
-                {
-                    intersections.Add(intersection_top);
-                }
-                if (LineIntersection(
-                    line_1_from, line_1_to, square_top_right, square_bottom_right,
-                    ref intersection_right
-                ))
-                {
-                    intersections.Add(intersection_right);
-                }
-                if (LineIntersection(
-                    line_1_from, line_1_to, square_bottom_left, square_bottom_right,
-                    ref intersection_bottom
-                ))
-                {
-                    intersections.Add(intersection_bottom);
-                }
-                if (LineIntersection(
-                    line_1_from, line_1_to, square_top_left, square_bottom_left,
-                    ref intersection_left
-                ))
-                {
-                    intersections.Add(intersection_left);
-                }
+                    List<Vector2> intersections = new List<Vector2>();
 
-                collision_point.transform.position = intersection_top;
-                Vector2[] intersection_array = intersections.ToArray();
-                for (int i = 0; i < intersection_array.Length; i++)
-                {
-                    collision_points[i].transform.position = intersection_array[i];
+                    if (LineIntersection(
+                        line_1_from, line_1_to, square_top_left, square_top_right,
+                        ref intersection_top
+                    ))
+                    {
+                        intersections.Add(intersection_top);
+                    }
+                    if (LineIntersection(
+                        line_1_from, line_1_to, square_top_right, square_bottom_right,
+                        ref intersection_right
+                    ))
+                    {
+                        intersections.Add(intersection_right);
+                    }
+                    if (LineIntersection(
+                        line_1_from, line_1_to, square_bottom_left, square_bottom_right,
+                        ref intersection_bottom
+                    ))
+                    {
+                        intersections.Add(intersection_bottom);
+                    }
+                    if (LineIntersection(
+                        line_1_from, line_1_to, square_top_left, square_bottom_left,
+                        ref intersection_left
+                    ))
+                    {
+                        intersections.Add(intersection_left);
+                    }
+
+                    collision_point.transform.position = intersection_top;
+                    Vector2[] intersection_array = intersections.ToArray();
+                    for (int i = 0; i < intersection_array.Length; i++)
+                    {
+                        collision_points[i].transform.position = intersection_array[i];
+                    }
                 }
-            }
         }
+
     }
 }
