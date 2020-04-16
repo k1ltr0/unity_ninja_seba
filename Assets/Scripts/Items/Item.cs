@@ -7,5 +7,12 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     public int health =0;
     public bool isDefaultItem = false;
+
+    public virtual void Use() {
+
+
+        Inventory.instance.Use(this);
+
+    }
         
 }

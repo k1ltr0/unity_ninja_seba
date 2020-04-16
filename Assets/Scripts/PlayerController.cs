@@ -6,11 +6,14 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
+
     public CharacterStats stats;
 
-    void Start()
+
+    void Awake()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
@@ -26,5 +29,12 @@ public class PlayerController : MonoBehaviour
     {
 
         stats.TakeDamage(damage);
+    }
+
+
+    public void TakeHealth(int health)
+    {
+     
+        //stats.TakeHealth(health);
     }
 }
