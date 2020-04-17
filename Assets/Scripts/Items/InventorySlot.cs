@@ -24,6 +24,6 @@ public class InventorySlot : MonoBehaviour
     public void UseItem() {
 
         Inventory.instance.Use(item);
-        ClearSlot();
+        //ClearSlot();
     }
 }

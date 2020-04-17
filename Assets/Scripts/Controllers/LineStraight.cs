@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+
 
 
 
@@ -12,18 +14,36 @@ public class LineStraight : MonoBehaviour
     public LineRenderer _line;
     private Vector3 _mouse_pos;
     public Material _material;
-    private int _current_lines;
+    public int _current_lines;
     public Transform _pointer;
 
-
+    BattleManager battle_state;
 
     private void Awake()
     {
         instance = this;
     }
 
+    private void Start()
+    {
+        battle_state = BattleManager.instance;
+    }
+
     private void Update()
     {
+
+ 
+
+        if (battle_state.state != BattleState.PLAYERTURN)
+        {
+            return;
+        }
+
+        if (InventoryUI.instance.itemsParent.gameObject.activeSelf)
+        {
+            return;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
 
@@ -51,7 +71,7 @@ public class LineStraight : MonoBehaviour
             _mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             _mouse_pos.z = 0;
             _line = null;
-            _current_lines++;
+            //_current_lines++;
 
         }
         else if (Input.GetMouseButton(0) && _line && Vector2.Distance(_line.GetPosition(0), _line.GetPosition(1)) < 100)
@@ -86,7 +106,7 @@ public class LineStraight : MonoBehaviour
         _line.endWidth = 1.15f;
         _line.useWorldSpace = true;
         _line.numCapVertices = 50;
-
+        _current_lines++;
         if (from_pointer)
         {
             _line.SetPosition(0, ini);

@@ -39,4 +39,9 @@ public class CharacterStats : MonoBehaviour
         health_bar.SetHealth(currectHealth);
     }
 
+    public int Attack() {
+
+        return damage.GetValue();
+    }
+
 }

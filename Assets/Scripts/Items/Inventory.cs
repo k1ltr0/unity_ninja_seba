@@ -10,10 +10,10 @@ public class Inventory : MonoBehaviour
 
     public List<Item> items = new List<Item>();
 
-    public Item _item;
+    public Item _item, _item_b;
 
-    public CharacterStats player;
-    public ParticleSystem _health_particle;
+    public PlayerController player;
+    
 
 
     private void Awake()
@@ -29,6 +29,11 @@ public class Inventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             Add(_item);
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            Add(_item_b);
         }
 
         /*if (Input.GetKeyDown(KeyCode.U))
@@ -68,7 +73,8 @@ public class Inventory : MonoBehaviour
     public void Use(Item item) {
 
         player.TakeHealth(item.health);
-        _health_particle.Play();
-        //Remove(item);
+        Remove(item);
+
+
     }
 }

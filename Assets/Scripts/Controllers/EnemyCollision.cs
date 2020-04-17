@@ -179,7 +179,7 @@ public class EnemyCollision : MonoBehaviour
             {
                 if (FindCollisions(line) > 1)
                 {
-                    Debug.Log("take damage");
+                    Debug.Log("take damage from "+ LineStraight.instance._current_lines + " lines");
                 }
             }
         }

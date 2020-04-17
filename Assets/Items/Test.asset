@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   name: Test
-  icon: {fileID: 21300000, guid: 522ea63c92dffbe479141291968c05ce, type: 3}
+  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   health: 10
   isDefaultItem: 0

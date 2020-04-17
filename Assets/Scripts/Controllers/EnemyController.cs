@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-
-public class PlayerController : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
-    public static PlayerController instance;
+    // Start is called before the first frame update}
+
+
 
     public CharacterStats stats;
 
 
-    void Awake()
+
+    void Start()
     {
-        instance = this;
+        
     }
 
     // Update is called once per frame
@@ -25,16 +26,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
-    {
+    public void TakeDamage(int damage) {
 
         stats.TakeDamage(damage);
-    }
-
-
-    public void TakeHealth(int health)
-    {
-     
-        //stats.TakeHealth(health);
     }
 }
