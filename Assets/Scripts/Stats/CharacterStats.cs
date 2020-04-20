@@ -27,7 +27,11 @@ public class CharacterStats : MonoBehaviour
         currectHealth -= damage;
         health_bar.SetHealth(currectHealth);
 
-        //Debug.Log(transform.name +" take "+ damage +" damage");
+        if (currectHealth <= 0)
+        {
+            Die();
+        }
+
 
     }
 
@@ -37,6 +41,11 @@ public class CharacterStats : MonoBehaviour
         currectHealth += health;
         currectHealth = Mathf.Clamp(currectHealth,0, maxHealth);
         health_bar.SetHealth(currectHealth);
+    }
+
+    void Die() {
+
+        this.gameObject.SetActive(false);
     }
 
     public int Attack() {

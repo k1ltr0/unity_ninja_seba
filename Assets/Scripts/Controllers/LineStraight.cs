@@ -71,7 +71,8 @@ public class LineStraight : MonoBehaviour
             _mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             _mouse_pos.z = 0;
             _line = null;
-            //_current_lines++;
+
+            //BattleManager.instance.PlayerAttack();
 
         }
         else if (Input.GetMouseButton(0) && _line && Vector2.Distance(_line.GetPosition(0), _line.GetPosition(1)) < 100)
