@@ -159,7 +159,7 @@ public class EnemyCollision : MonoBehaviour
         foreach (GameObject game_object in lines)
         {
             LineRenderer line = game_object.GetComponent<LineRenderer>();
-            if (FindCollisions(line) > 1)
+            if (line.bounds.Intersects(collider2D.bounds) && FindCollisions(line) > 1)
             {
                 collision_points += 1;
             }
@@ -182,19 +182,8 @@ public class EnemyCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (LineStraight.instance._line != null)
-        {
-            LineRenderer line = LineStraight.instance._line;
-            bool intersects = line.bounds.Intersects(collider2D.bounds);
+        int collisions = FindCollisions();
 
-            if (intersects)
-            {
-                if (FindCollisions(line) > 1)
-                {
-                    Debug.Log("take damage from " + LineStraight.instance._current_lines + " lines");
-                }
-            }
-        }
-
+        Debug.Log("take damage from " + collisions + " lines");
     }
 }
