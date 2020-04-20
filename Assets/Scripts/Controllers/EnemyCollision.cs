@@ -8,7 +8,8 @@ public class EnemyCollision : MonoBehaviour
 
     BoxCollider2D collider2D;
 
-    private GameObject[] collision_points;
+    private Stack<GameObject> avalilable_points = new Stack<GameObject>();
+    private Stack<GameObject> in_use_points = new Stack<GameObject>();
     private Vector2[] vertices = new Vector2[4];
     public bool LineIntersection(Vector2 p1, Vector2 p2, Vector2 p3, Vector2 p4, ref Vector2 intersection)
     {
@@ -143,7 +144,7 @@ public class EnemyCollision : MonoBehaviour
             );
             if (intersects)
             {
-                collision_points[j].transform.position = intersection;
+                GetCollisionPoint().transform.position = intersection;
                 j++;
             }
         }
@@ -151,10 +152,34 @@ public class EnemyCollision : MonoBehaviour
         return j;
     }
 
+    private void DismissCollisionPoints()
+    {
+        while (this.in_use_points.Count > 0)
+        {
+            this.avalilable_points.Push(this.in_use_points.Pop());
+        }
+    }
+
+    private GameObject GetCollisionPoint()
+    {
+        GameObject instance;
+        if (this.avalilable_points.Count == 0)
+        {
+            instance = Instantiate(collision_point);
+            this.in_use_points.Push(instance);
+            return instance;
+        }
+
+        instance = this.avalilable_points.Pop();
+        this.in_use_points.Push(instance);
+        return instance;
+    }
+
     public int FindCollisions()
     {
         int collision_points = 0;
         GameObject[] lines = GameObject.FindGameObjectsWithTag("line");
+        DismissCollisionPoints();
 
         foreach (GameObject game_object in lines)
         {
@@ -171,19 +196,13 @@ public class EnemyCollision : MonoBehaviour
     void Start()
     {
         collider2D = GetComponent<BoxCollider2D>();
-        collision_points = new GameObject[] {
-            Instantiate(collision_point),
-            Instantiate(collision_point),
-            Instantiate(collision_point),
-            Instantiate(collision_point)
-        };
+        avalilable_points = new Stack<GameObject>();
     }
 
     // Update is called once per frame
     void Update()
     {
         int collisions = FindCollisions();
-
         Debug.Log("take damage from " + collisions + " lines");
     }
 }
