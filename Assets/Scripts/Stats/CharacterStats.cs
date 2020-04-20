@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class CharacterStats : MonoBehaviour
 {
@@ -7,6 +9,13 @@ public class CharacterStats : MonoBehaviour
     public Stat damage;
     public Stat defense;
     public HealthBar health_bar;
+
+    public EnemyCollision enemy_collision;
+
+    void Start()
+    {
+        enemy_collision = this.GetComponent<EnemyCollision>();
+    }
 
     private void Awake()
     {
@@ -17,7 +26,10 @@ public class CharacterStats : MonoBehaviour
     public void TakeDamage(int damage) {
         damage -= defense.GetValue();
         damage = Mathf.Clamp(damage,0,int.MaxValue);
-        currectHealth -= damage;
+        if (enemy_collision != null)
+            currectHealth -= damage * enemy_collision.FindCollisions();
+        else
+            currectHealth -= damage;
         health_bar.SetHealth(currectHealth);
 
         if (currectHealth <= 0)

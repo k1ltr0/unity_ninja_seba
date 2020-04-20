@@ -151,6 +151,22 @@ public class EnemyCollision : MonoBehaviour
         return j;
     }
 
+    public int FindCollisions()
+    {
+        int collision_points = 0;
+        GameObject[] lines = GameObject.FindGameObjectsWithTag("line");
+
+        foreach (GameObject game_object in lines)
+        {
+            LineRenderer line = game_object.GetComponent<LineRenderer>();
+            if (FindCollisions(line) > 1)
+            {
+                collision_points += 1;
+            }
+        }
+
+        return collision_points;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -168,11 +184,7 @@ public class EnemyCollision : MonoBehaviour
     {
         if (LineStraight.instance._line != null)
         {
-            //GameObject[] lines = LineStraight.instance._line;
-
-            //foreach (GameObject game_object in lines)
-            //{
-            LineRenderer line = LineStraight.instance._line;//game_object.GetComponent<LineRenderer>();
+            LineRenderer line = LineStraight.instance._line;
             bool intersects = line.bounds.Intersects(collider2D.bounds);
 
             if (intersects)
