@@ -136,7 +136,7 @@ public class EnemyCollision : MonoBehaviour
 
         for (int i = 0; i < 4; i++)
         {
-            int next = i < 3 ? i+1:0;
+            int next = i < 3 ? i + 1 : 0;
             intersects = LineIntersection(
                 line_1_from, line_1_to, vertices[i], vertices[next],
                 ref intersection
@@ -179,7 +179,7 @@ public class EnemyCollision : MonoBehaviour
             {
                 if (FindCollisions(line) > 1)
                 {
-                    Debug.Log("take damage from "+ LineStraight.instance._current_lines + " lines");
+                    Debug.Log("take damage from " + LineStraight.instance._current_lines + " lines");
                 }
             }
         }

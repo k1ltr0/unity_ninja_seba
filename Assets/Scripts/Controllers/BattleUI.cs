@@ -14,7 +14,8 @@ public class BattleUI : MonoBehaviour
         instance = this;
     }
 
-    public void PlayerTurn() {
+    public void PlayerTurn()
+    {
         playerHud.SetActive(true);
     }
 

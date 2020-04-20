@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class LineCreator : MonoBehaviour
 {
     // Start is called before the first frame update
-
     public static LineCreator instance;
 
     public GameObject linePrefab;//,trailPrefab;
@@ -16,9 +15,7 @@ public class LineCreator : MonoBehaviour
 
     public Image _energy_bar;
 
-    GameObject lineGo,trailGo;
-
-
+    GameObject lineGo, trailGo;
 
     List<Line> _lines;
 
@@ -35,12 +32,10 @@ public class LineCreator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         /*if (Input.GetMouseButtonDown(0))
         {
             //lineGo = Instantiate(linePrefab);
             CreateNewLine(false , Color.white);
-            
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -54,17 +49,15 @@ public class LineCreator : MonoBehaviour
             activeLine.UpdateLine(mousePos);
             //trailGo.transform.position = mousePos;
         }*/
-
     }
 
-    public void UpdateBar(float used) {
-
+    public void UpdateBar(float used)
+    {
         _energy_bar.fillAmount = (100 - used) / 100;
-
     }
 
-    public void CreateNewLine(bool from_bonus,Color _color) {
-
+    public void CreateNewLine(bool from_bonus, Color _color)
+    {
         //activeLine = null;
         if (from_bonus)
         {
@@ -74,10 +67,6 @@ public class LineCreator : MonoBehaviour
         //trailGo = Instantiate(trailPrefab);
 
         activeLine = lineGo.GetComponent<Line>();
-        activeLine._line.SetColors(_color,_color);
-
+        activeLine._line.SetColors(_color, _color);
     }
-
-
-
 }

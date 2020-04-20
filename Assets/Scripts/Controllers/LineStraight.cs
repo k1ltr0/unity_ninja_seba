@@ -5,8 +5,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-
-
 public class LineStraight : MonoBehaviour
 {
     public static LineStraight instance;
@@ -31,9 +29,6 @@ public class LineStraight : MonoBehaviour
 
     private void Update()
     {
-
- 
-
         if (battle_state.state != BattleState.PLAYERTURN)
         {
             return;
@@ -49,7 +44,7 @@ public class LineStraight : MonoBehaviour
 
             if (_line == null)
             {
-                CreateLine(false,Vector2.zero);
+                CreateLine(false, Vector2.zero);
             }
 
             _mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -88,8 +83,8 @@ public class LineStraight : MonoBehaviour
 
     }
 
-
-    public void CreateLine(bool from_pointer, Vector2 ini) {
+    public void CreateLine(bool from_pointer, Vector2 ini)
+    {
 
         if (from_pointer)
         {
@@ -98,7 +93,6 @@ public class LineStraight : MonoBehaviour
 
             //_line.SetPosition(1, _mouse_pos);
         }
-
 
         _line = new GameObject("Line" + _current_lines).AddComponent<LineRenderer>();
         _line.material = _material;

@@ -5,16 +5,11 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     // Start is called before the first frame update}
-
-
-
     public CharacterStats stats;
-
-
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,8 +21,8 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage) {
-
+    public void TakeDamage(int damage)
+    {
         stats.TakeDamage(damage);
     }
 }

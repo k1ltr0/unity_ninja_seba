@@ -12,23 +12,22 @@ public class Line : MonoBehaviour
     public LineRenderer _line;
     public EdgeCollider2D _line_col;
     public int _large;
-    
 
     List<Vector2> points;
 
-
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void UpdateLine(Vector2 mousePos) {
+    public void UpdateLine(Vector2 mousePos)
+    {
 
         if (points == null)
         {
@@ -37,12 +36,11 @@ public class Line : MonoBehaviour
             return;
         }
 
-        if (Vector2.Distance(points.Last(), mousePos) >.1f && _large > points.Count)
+        if (Vector2.Distance(points.Last(), mousePos) > .1f && _large > points.Count)
         {
             SetPoint(mousePos);
         }
     }
-
 
     void SetPoint(Vector2 point)
     {
@@ -50,7 +48,7 @@ public class Line : MonoBehaviour
         points.Add(point);
 
         _line.positionCount = points.Count;
-        _line.SetPosition(points.Count-1,point);
+        _line.SetPosition(points.Count - 1, point);
 
         if (points.Count > 1)
         {
@@ -66,10 +64,6 @@ public class Line : MonoBehaviour
             Debug.Log("PUEDE");
             collision.gameObject.SetActive(false);
             LineCreator.instance.CreateNewLine(true, collision.GetComponent<SpriteRenderer>().color);
-
         }
-
     }
-
-
 }

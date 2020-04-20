@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-
         stats.TakeDamage(damage);
     }
 
@@ -35,7 +34,6 @@ public class PlayerController : MonoBehaviour
     public void TakeHealth(int health)
     {
         _health_particle.Play();
-
         stats.TakeHealth(health);
     }
 
