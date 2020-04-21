@@ -10,7 +10,7 @@ public class BattleManager : MonoBehaviour
     public BattleState state;
 
     public List<CharacterStats> _enemy = new List<CharacterStats>();
-    public List<CharacterStats> _player = new List<CharacterStats>();
+    public List<PlayerController> _player = new List<PlayerController>();
 
     private void Awake()
     {
@@ -24,6 +24,7 @@ public class BattleManager : MonoBehaviour
 
     IEnumerator SetupBattle() {
         yield return new WaitForSeconds(1f);
+        BattleUI.instance.PlayerTurn();
         StartCoroutine(PlayerTurn());
     }
 
@@ -34,13 +35,29 @@ public class BattleManager : MonoBehaviour
 
     IEnumerator EnemyTurn()
     {
-        state = BattleState.ENEMYTURN;
-        yield return new WaitForSeconds(2f);
 
-        if (_enemy[0].currectHealth > 0)
+        state = BattleState.ENEMYTURN;
+
+        yield return new WaitForSeconds(1f);
+
+        if (_enemy != null && _enemy.Count > 0)
         {
-            EnemyAttack();
+            for (int i = 0; i < _enemy.Count; i++)
+            {
+                if (_enemy[i])
+
+                    if (_enemy[i].currectHealth > 0)
+                    {
+                        EnemyAttack(_enemy[i]);
+                        _enemy[i].GetComponent<SimpleAttackAnim>().Attack();
+                    }
+                yield return new WaitForSeconds(1.5f);
+
+            }
         }
+
+        yield return new WaitForSeconds(0f);
+
         BattleUI.instance.PlayerTurn();
     }
 
@@ -50,16 +67,36 @@ public class BattleManager : MonoBehaviour
         // Debo validar un area de ejecucion , ya que siempre que detecta el mouse button down genera una linea nueva
         //aunque la verdad con la validacion de cuantas veces pasa una linea por el enemigo se arregla el ataque
 
-        _enemy[0].TakeDamage(_player[0].Attack());
+
+        for (int i = 0; i < _enemy.Count; i++)
+        {
+            if (_enemy[i])
+
+                if (_enemy[i].currectHealth > 0)
+                {
+                    _enemy[i].TakeDamage(_player[0].Attack());
+                }
+        }
+
 
         state = BattleState.ENEMYTURN;
         StartCoroutine(EnemyTurn());
         BattleUI.instance.EnemyTurn();
+        LineStraight.instance.ResetLines();
     }
 
-    public void EnemyAttack()
+    public void EnemyAttack(CharacterStats enemy)
     {
-        _player[0].TakeDamage(_enemy[0].Attack());
+
+        if (enemy)
+        {
+            if (enemy.currectHealth > 0)
+            {
+                _player[0].TakeDamage(enemy.Attack());
+            }
+        }
+
+
         state = BattleState.PLAYERTURN;
         StartCoroutine(PlayerTurn());
     }

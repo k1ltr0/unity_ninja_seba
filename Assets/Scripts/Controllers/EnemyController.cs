@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update}
     public CharacterStats stats;
 
+
     void Start()
     {
 
@@ -22,6 +23,11 @@ public class EnemyController : MonoBehaviour
     }
 
     public void TakeDamage(int damage)
+    {
+        stats.TakeDamage(damage);
+    }
+
+    public void Attack(int damage)
     {
         stats.TakeDamage(damage);
     }

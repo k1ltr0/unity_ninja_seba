@@ -22,7 +22,7 @@ public class Pointer : MonoBehaviour
     {
         if (collision.tag == "bonus")
         {
-            LineStraight.instance.CreateLine(true, this.transform.position);
+            LineStraight.instance.CreateLine(true, collision.transform.position);
             //Instantiate(_algo, collision.GetContacts(0). // [0].point, Quaternion.identity);
         }
     }

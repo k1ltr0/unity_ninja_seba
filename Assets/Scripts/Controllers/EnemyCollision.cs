@@ -202,7 +202,11 @@ public class EnemyCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int collisions = FindCollisions();
-        Debug.Log("take damage from " + collisions + " lines");
+        if (Input.GetMouseButton(0))
+        {
+            int collisions = FindCollisions();
+            Debug.Log("take damage from " + collisions + " lines");
+        }
+     
     }
 }

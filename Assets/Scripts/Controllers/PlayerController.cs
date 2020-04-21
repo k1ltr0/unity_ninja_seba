@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
 
     public CharacterStats stats;
-    public ParticleSystem _health_particle;
+    public ParticleSystem _health_particle,_attack_particle,_charge_particle;
 
     void Awake()
     {
@@ -35,6 +35,21 @@ public class PlayerController : MonoBehaviour
     {
         _health_particle.Play();
         stats.TakeHealth(health);
+    }
+
+    public void Charge() {
+
+        _charge_particle.Play();
+    }
+
+    public int  Attack() {
+
+
+        _charge_particle.Stop();
+
+        _attack_particle.Play();
+
+        return stats.Attack();
     }
 
 }

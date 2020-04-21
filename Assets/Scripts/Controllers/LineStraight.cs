@@ -17,6 +17,10 @@ public class LineStraight : MonoBehaviour
 
     BattleManager battle_state;
 
+    List<GameObject> _lines = new List<GameObject>();
+
+    public PlayerController player;
+
     private void Awake()
     {
         instance = this;
@@ -51,7 +55,7 @@ public class LineStraight : MonoBehaviour
             _mouse_pos.z = 0;
             _line.SetPosition(0, _mouse_pos);
             _line.SetPosition(1, _mouse_pos);
-
+            player.Charge();
 
         }
         else if (Input.GetMouseButtonUp(0) && _line)
@@ -65,7 +69,10 @@ public class LineStraight : MonoBehaviour
 
             _mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             _mouse_pos.z = 0;
+
             _line = null;
+
+
 
             //BattleManager.instance.PlayerAttack();
 
@@ -81,6 +88,25 @@ public class LineStraight : MonoBehaviour
 
         }
 
+
+
+    }
+
+    public void ResetLines() {
+
+
+        foreach (GameObject item in _lines)
+        {
+            Destroy(item);
+        }
+
+        _lines.Clear();
+    }
+
+    public void DestroyLine(GameObject _line)
+    {
+        Destroy(_line);
+        _lines.Remove(_line);
     }
 
     public void CreateLine(bool from_pointer, Vector2 ini)
@@ -108,6 +134,8 @@ public class LineStraight : MonoBehaviour
             _line.SetPosition(0, ini);
             _line.SetPosition(1, _mouse_pos);
         }
+
+        _lines.Add(_line.gameObject);
     }
 
 }
