@@ -125,7 +125,7 @@ public class EnemyCollision : MonoBehaviour
         return this.vertices;
     }
 
-    private int FindCollisions(LineRenderer line)
+    public int FindCollisions(LineRenderer line)
     {
         bool intersects = false;
         Vector2 line_1_from = line.GetPosition(0);

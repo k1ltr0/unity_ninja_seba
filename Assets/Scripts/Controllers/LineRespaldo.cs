@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 
-public class Line : MonoBehaviour
+public class LineRespaldo : MonoBehaviour
 {
     // Start is called before the first frame update
 
@@ -63,7 +63,7 @@ public class Line : MonoBehaviour
         {
             Debug.Log("PUEDE");
             collision.gameObject.SetActive(false);
-            LineCreator.instance.CreateNewLine(true, collision.GetComponent<SpriteRenderer>().color);
+            //LineCreator.instance.CreateNewLine(true, collision.GetComponent<SpriteRenderer>().color);
         }
     }
 }

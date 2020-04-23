@@ -16,10 +16,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            TakeDamage(10);
-        }
+
     }
 
     public void TakeDamage(int damage)
@@ -27,8 +24,8 @@ public class EnemyController : MonoBehaviour
         stats.TakeDamage(damage);
     }
 
-    public void Attack(int damage)
+    public int Attack()
     {
-        stats.TakeDamage(damage);
+        return stats.Attack();
     }
 }

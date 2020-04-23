@@ -23,7 +23,7 @@ public class BattleUI : MonoBehaviour
     public void PlayerTurn()
     {
         playerHud.SetActive(true);
-        battle_state.text = "TU TURNO";
+        battle_state.text = "Player turn";
     }
 
     public void EnemyTurn()
@@ -34,7 +34,7 @@ public class BattleUI : MonoBehaviour
         }*/
 
         playerHud.SetActive(false);
-        battle_state.text = "TURNO ENEMIGO";
+        battle_state.text = "Enemy turn";
 
 
     }

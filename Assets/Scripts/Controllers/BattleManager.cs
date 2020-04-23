@@ -38,7 +38,7 @@ public class BattleManager : MonoBehaviour
 
         state = BattleState.ENEMYTURN;
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         if (_enemy != null && _enemy.Count > 0)
         {
@@ -51,7 +51,7 @@ public class BattleManager : MonoBehaviour
                         EnemyAttack(_enemy[i]);
                         _enemy[i].GetComponent<SimpleAttackAnim>().Attack();
                     }
-                yield return new WaitForSeconds(1.5f);
+                yield return new WaitForSeconds(1f);
 
             }
         }
