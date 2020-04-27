@@ -78,7 +78,7 @@ public class BattleManager : MonoBehaviour
                 }
         }
 
-
+        CameraController.instance.Shake(.3f,15,.4f);
         state = BattleState.ENEMYTURN;
         StartCoroutine(EnemyTurn());
         BattleUI.instance.EnemyTurn();
@@ -98,6 +98,7 @@ public class BattleManager : MonoBehaviour
 
 
         state = BattleState.PLAYERTURN;
+        CameraController.instance.Shake(.3f, 5, .65f);
         StartCoroutine(PlayerTurn());
     }
 

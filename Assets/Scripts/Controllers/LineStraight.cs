@@ -16,11 +16,14 @@ public class LineStraight : MonoBehaviour
     public Transform _pointer;
     public Gradient _gradient;
 
+    public ParticleSystem _blood;
+
     public List<EnemyCollision> _enemies = new List<EnemyCollision>();
 
     BattleManager battle_state;
 
     List<GameObject> _lines = new List<GameObject>();
+    Transform _start, _end;
 
     public PlayerController player;
 
@@ -51,7 +54,7 @@ public class LineStraight : MonoBehaviour
 
             if (_line == null)
             {
-                CreateLine(false, Vector2.zero);
+                CreateLine(false, _mouse_pos);
             }
 
             _mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -85,6 +88,12 @@ public class LineStraight : MonoBehaviour
             if (Vector2.Distance(_line.GetPosition(0), _mouse_pos) < 100)
             {
                 _line.SetPosition(1, _mouse_pos);
+                
+                //_end.position = _mouse_pos;
+
+                //_line.GetComponent<Electric>().CalculatePoints(_line.GetPosition(0), _line.GetPosition(1), _line);
+
+
                 LineCreator.instance.UpdateBar(Vector2.Distance(_line.GetPosition(0), _mouse_pos));
                 _pointer.transform.position = _mouse_pos;
             }  
@@ -130,6 +139,9 @@ public class LineStraight : MonoBehaviour
             if (enemy.FindCollisions(_line) == 2)
             {
                 _shoold_destroy = false;
+                Debug.Log(enemy._points_pos.Count);
+                /*_blood.transform.position = enemy._points_pos[4].transform.position;
+                _blood.Play();*/
             }
   
         }
@@ -139,6 +151,7 @@ public class LineStraight : MonoBehaviour
             DestroyLine(_line.gameObject);
 
         }
+       
 
     }
 
@@ -158,19 +171,20 @@ public class LineStraight : MonoBehaviour
         _line.tag = "line";
         _line.material = _material;
         _line.positionCount = 2;
-        _line.startWidth = 1.15f;
-        _line.endWidth = 1.15f;
+        _line.startWidth = 1f;
+        _line.endWidth = 1f;
         _line.useWorldSpace = true;
         _line.numCapVertices = 50;
-        _line.colorGradient = _gradient;
+        //_line.colorGradient = _gradient;
         _current_lines++;
+
 
         if (from_pointer)
         {
             _line.SetPosition(0, ini);
             _line.SetPosition(1, _mouse_pos);
         }
-     
+        //_line.gameObject.AddComponent<Electric>();
         _lines.Add(_line.gameObject);
     }
 
