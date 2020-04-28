@@ -22,6 +22,15 @@ public class BattleManager : MonoBehaviour
         StartCoroutine(SetupBattle());
     }
 
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            PlayerAttack();
+        }
+    }
+
     IEnumerator SetupBattle() {
         yield return new WaitForSeconds(1f);
         BattleUI.instance.PlayerTurn();
@@ -68,17 +77,43 @@ public class BattleManager : MonoBehaviour
         //aunque la verdad con la validacion de cuantas veces pasa una linea por el enemigo se arregla el ataque
 
 
+        /*for (int i = 0; i < _enemy.Count; i++)
+        {
+            if (_enemy[i])
+
+                if (_enemy[i].currectHealth > 0)
+                {
+                    //Debug.Log(LineStraight.instance._lines.Count);
+                    _enemy[i].TakeDamage(_player[0].GetDamage());
+                }
+        }*/
+
+        /*state = BattleState.ENEMYTURN;
+        StartCoroutine(EnemyTurn());
+        BattleUI.instance.EnemyTurn();
+        LineStraight.instance.ResetLines();*/
+
+        StartCoroutine(SendDamage());
+    }
+
+    IEnumerator SendDamage()
+    {
+        _player[0].Attack();
+
+        yield return new WaitWhile(() => _player[0].attack);
+
         for (int i = 0; i < _enemy.Count; i++)
         {
             if (_enemy[i])
 
                 if (_enemy[i].currectHealth > 0)
                 {
-                    _enemy[i].TakeDamage(_player[0].Attack());
+                    //Debug.Log(LineStraight.instance._lines.Count);
+                    _enemy[i].TakeDamage(_player[0].GetDamage());
                 }
         }
 
-        CameraController.instance.Shake(.3f,15,.4f);
+
         state = BattleState.ENEMYTURN;
         StartCoroutine(EnemyTurn());
         BattleUI.instance.EnemyTurn();

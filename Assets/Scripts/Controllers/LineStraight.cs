@@ -22,7 +22,7 @@ public class LineStraight : MonoBehaviour
 
     BattleManager battle_state;
 
-    List<GameObject> _lines = new List<GameObject>();
+    public List<GameObject> _lines = new List<GameObject>();
     Transform _start, _end;
 
     public PlayerController player;
@@ -130,7 +130,7 @@ public class LineStraight : MonoBehaviour
 
     public void ValidateLines() {
 
-        Debug.Log(_enemies[0].FindCollisions(_line));
+        //Debug.Log(_enemies[0].FindCollisions(_line));
 
         bool _shoold_destroy = true;
 
@@ -139,7 +139,7 @@ public class LineStraight : MonoBehaviour
             if (enemy.FindCollisions(_line) == 2)
             {
                 _shoold_destroy = false;
-                Debug.Log(enemy._points_pos.Count);
+                //Debug.Log(enemy._points_pos.Count);
                 /*_blood.transform.position = enemy._points_pos[4].transform.position;
                 _blood.Play();*/
             }

@@ -205,7 +205,7 @@ public class EnemyCollision : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             int collisions = FindCollisions();
-            Debug.Log("take damage from " + collisions + " lines");
+            //Debug.Log("take damage from " + collisions + " lines");
         }
      
     }
