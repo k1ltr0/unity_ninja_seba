@@ -44,9 +44,7 @@ public class BattleManager : MonoBehaviour
 
     IEnumerator EnemyTurn()
     {
-
         state = BattleState.ENEMYTURN;
-
         yield return new WaitForSeconds(2f);
 
         if (_enemy != null && _enemy.Count > 0)
@@ -54,14 +52,12 @@ public class BattleManager : MonoBehaviour
             for (int i = 0; i < _enemy.Count; i++)
             {
                 if (_enemy[i])
-
                     if (_enemy[i].currectHealth > 0)
                     {
                         EnemyAttack(_enemy[i]);
                         _enemy[i].GetComponent<SimpleAttackAnim>().Attack();
                     }
                 yield return new WaitForSeconds(1f);
-
             }
         }
 
@@ -70,9 +66,8 @@ public class BattleManager : MonoBehaviour
         BattleUI.instance.PlayerTurn();
     }
 
-
-    public void PlayerAttack() {
-
+    public void PlayerAttack()
+    {
         // Debo validar un area de ejecucion , ya que siempre que detecta el mouse button down genera una linea nueva
         //aunque la verdad con la validacion de cuantas veces pasa una linea por el enemigo se arregla el ataque
 
@@ -122,7 +117,6 @@ public class BattleManager : MonoBehaviour
 
     public void EnemyAttack(CharacterStats enemy)
     {
-
         if (enemy)
         {
             if (enemy.currectHealth > 0)
@@ -130,7 +124,6 @@ public class BattleManager : MonoBehaviour
                 _player[0].TakeDamage(enemy.Attack());
             }
         }
-
 
         state = BattleState.PLAYERTURN;
         CameraController.instance.Shake(.3f, 5, .65f);

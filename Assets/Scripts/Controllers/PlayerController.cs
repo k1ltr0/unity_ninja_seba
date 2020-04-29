@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
+    public PlayerAttackAnimation _player_attack_animation;
 
     public CharacterStats stats;
     public bool attack = false;
@@ -19,26 +19,10 @@ public class PlayerController : MonoBehaviour
         instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*if (Input.GetKeyDown(KeyCode.D))
-        {
-            TakeDamage(10);
-        }*/
-
-        if (attack)
-        {
-            
-
-        }
-    }
-
     public void TakeDamage(int damage)
     {
         stats.TakeDamage(damage);
     }
-
 
     public void TakeHealth(int health)
     {
@@ -46,8 +30,8 @@ public class PlayerController : MonoBehaviour
         stats.TakeHealth(health);
     }
 
-    public void Charge() {
-
+    public void Charge()
+    {
         _charge_particle.Play();
     }
 
@@ -78,7 +62,7 @@ public class PlayerController : MonoBehaviour
 
             /* for (int i = 0; i < LineStraight.instance._lines.Count; i++)
              {
-                 if (LineStraight.instance._lines[i]) { 
+                 if (LineStraight.instance._lines[i]) {
                      //Debug.Log(_lines[i].GetComponent<LineStraight>()._line.GetPosition(1).x);
                      iTween.MoveBy(gameObject, iTween.Hash("x", LineStraight.instance._lines[i].GetComponent<LineStraight>()._line.GetPosition(0), "y", LineStraight.instance._lines[i].GetComponent<LineStraight>()._line.GetPosition(0), "easeType", "linear", "loopType", "none", "delay", .1));
                  }*/
@@ -122,7 +106,7 @@ public class PlayerController : MonoBehaviour
 
         //_trail.gameObject.SetActive(false);
         attack = false;
-         
+
         foreach (ParticleSystem item in _blood_particles)
         {
             item.Play();
@@ -135,5 +119,3 @@ public class PlayerController : MonoBehaviour
     //iTween.MoveTo(gameObject, iTween.Hash("x", 2, "easeType", "easeInOutExpo", "loopType", "pingPong", "delay", .1));
 
 }
-
-

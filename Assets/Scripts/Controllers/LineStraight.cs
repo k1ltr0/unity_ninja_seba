@@ -8,7 +8,6 @@ using UnityEngine.EventSystems;
 public class LineStraight : MonoBehaviour
 {
     public static LineStraight instance;
-
     public LineRenderer _line;
     private Vector3 _mouse_pos;
     public Material _material;
@@ -49,7 +48,7 @@ public class LineStraight : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !IsOverUI())
         {
 
             if (_line == null)
@@ -64,13 +63,11 @@ public class LineStraight : MonoBehaviour
             player.Charge();
 
         }
-        else if (Input.GetMouseButtonUp(0) && _line)
+        else if (Input.GetMouseButtonUp(0) && _line && !IsOverUI())
         {
             if (Vector2.Distance(_line.GetPosition(0), _mouse_pos ) < 100)
             {
-
                 _line.SetPosition(1, _mouse_pos);
-
             }
 
             _mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -81,14 +78,13 @@ public class LineStraight : MonoBehaviour
         }
         else if (Input.GetMouseButton(0) && _line)
         {
-
             _mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             _mouse_pos.z = 0;
 
             if (Vector2.Distance(_line.GetPosition(0), _mouse_pos) < 100)
             {
                 _line.SetPosition(1, _mouse_pos);
-                
+
                 //_end.position = _mouse_pos;
 
                 //_line.GetComponent<Electric>().CalculatePoints(_line.GetPosition(0), _line.GetPosition(1), _line);
@@ -96,12 +92,8 @@ public class LineStraight : MonoBehaviour
 
                 LineCreator.instance.UpdateBar(Vector2.Distance(_line.GetPosition(0), _mouse_pos));
                 _pointer.transform.position = _mouse_pos;
-            }  
-
+            }
         }
-
-
-
     }
 
     public void ResetLines() {
@@ -130,8 +122,6 @@ public class LineStraight : MonoBehaviour
 
     public void ValidateLines() {
 
-        //Debug.Log(_enemies[0].FindCollisions(_line));
-
         bool _shoold_destroy = true;
 
         foreach (EnemyCollision enemy in _enemies)
@@ -143,7 +133,7 @@ public class LineStraight : MonoBehaviour
                 /*_blood.transform.position = enemy._points_pos[4].transform.position;
                 _blood.Play();*/
             }
-  
+
         }
 
         if (_shoold_destroy)
@@ -151,7 +141,7 @@ public class LineStraight : MonoBehaviour
             DestroyLine(_line.gameObject);
 
         }
-       
+
 
     }
 
@@ -184,8 +174,26 @@ public class LineStraight : MonoBehaviour
             _line.SetPosition(0, ini);
             _line.SetPosition(1, _mouse_pos);
         }
-        //_line.gameObject.AddComponent<Electric>();
         _lines.Add(_line.gameObject);
+    }
+
+    public bool IsOverUI()
+    {
+        return false;
+        // GameObject[] ui = GameObject.FindGameObjectsWithTag("ui");
+        // bool is_over = false;
+
+        // for (int i = 0; i < ui.Length; i++)
+        // {
+        //     GameObject button = ui[i];
+        //     if (Input.mousePosition.x > button.transform.position.x &&
+        //             Input.mousePosition.y > button.transform.position.y)
+        //     {
+        //         return true;
+        //     }
+        // }
+
+        // return is_over;
     }
 
 }

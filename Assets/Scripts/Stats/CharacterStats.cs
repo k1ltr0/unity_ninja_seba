@@ -62,9 +62,7 @@ public class CharacterStats : MonoBehaviour
     }
 
     void Die() {
-
         this.gameObject.SetActive(false);
-
     }
 
     public int Attack() {
@@ -92,7 +90,6 @@ public class CharacterStats : MonoBehaviour
     void UpdateLifeBar(float newValue)
     {
         health_bar.SetHealth(newValue);
-        //Debug.Log(exampleInt);
     }
 
 }

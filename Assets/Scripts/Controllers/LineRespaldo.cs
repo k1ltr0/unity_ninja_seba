@@ -61,7 +61,6 @@ public class LineRespaldo : MonoBehaviour
     {
         if (collision.tag == "bonus")
         {
-            Debug.Log("PUEDE");
             collision.gameObject.SetActive(false);
             //LineCreator.instance.CreateNewLine(true, collision.GetComponent<SpriteRenderer>().color);
         }

@@ -6,7 +6,7 @@ public class EnemyCollision : MonoBehaviour
 {
     public GameObject collision_point;
 
-    BoxCollider2D collider2D;
+    BoxCollider2D main_collider;
 
     private Stack<GameObject> avalilable_points = new Stack<GameObject>();
     private Stack<GameObject> in_use_points = new Stack<GameObject>();
@@ -110,16 +110,16 @@ public class EnemyCollision : MonoBehaviour
     private Vector2[] FindVertices()
     {
         this.vertices[0] = transform.TransformPoint(
-            collider2D.offset + Vector2.Reflect(collider2D.size, Vector2.left) * .5f
+            main_collider.offset + Vector2.Reflect(main_collider.size, Vector2.left) * .5f
         );
         this.vertices[1] = transform.TransformPoint(
-            collider2D.offset + collider2D.size * .5f
+            main_collider.offset + main_collider.size * .5f
         );
         this.vertices[2] = transform.TransformPoint(
-            collider2D.offset + Vector2.Reflect(collider2D.size, Vector2.down) * .5f
+            main_collider.offset + Vector2.Reflect(main_collider.size, Vector2.down) * .5f
         );
         this.vertices[3] = transform.TransformPoint(
-            collider2D.offset - collider2D.size * .5f
+            main_collider.offset - main_collider.size * .5f
         );
 
         return this.vertices;
@@ -184,7 +184,7 @@ public class EnemyCollision : MonoBehaviour
         foreach (GameObject game_object in lines)
         {
             LineRenderer line = game_object.GetComponent<LineRenderer>();
-            if (line.bounds.Intersects(collider2D.bounds) && FindCollisions(line) > 1)
+            if (line.bounds.Intersects(main_collider.bounds) && FindCollisions(line) > 1)
             {
                 collision_points += 1;
             }
@@ -195,7 +195,7 @@ public class EnemyCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        collider2D = GetComponent<BoxCollider2D>();
+        main_collider = GetComponent<BoxCollider2D>();
         avalilable_points = new Stack<GameObject>();
     }
 
@@ -205,8 +205,7 @@ public class EnemyCollision : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             int collisions = FindCollisions();
-            //Debug.Log("take damage from " + collisions + " lines");
         }
-     
+
     }
 }

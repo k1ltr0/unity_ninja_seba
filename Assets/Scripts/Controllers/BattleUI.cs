@@ -9,10 +9,7 @@ public class BattleUI : MonoBehaviour
     // Start is called before the first frame update
     public static BattleUI instance;
     public GameObject playerHud;
-
     public Text battle_state;
-
-
 
 
     private void Awake()

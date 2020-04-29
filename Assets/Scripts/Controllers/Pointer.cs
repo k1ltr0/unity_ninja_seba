@@ -15,7 +15,6 @@ public class Pointer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,7 +24,6 @@ public class Pointer : MonoBehaviour
             LineStraight.instance.CreateLine(true, collision.transform.position);
             collision.gameObject.SetActive(false);
             _algo.Play();
-            //Instantiate(_algo, collision.GetContacts(0). // [0].point, Quaternion.identity);
         }
     }
 }
