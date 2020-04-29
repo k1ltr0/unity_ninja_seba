@@ -215,7 +215,6 @@ public class LineStraight : MonoBehaviour
             }
         }
 
-        Debug.Log("outside");
         return false;
     }
 
