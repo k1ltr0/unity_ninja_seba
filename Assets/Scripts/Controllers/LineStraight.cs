@@ -50,7 +50,7 @@ public class LineStraight : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(0) && !IsOverUI())
+        if (Input.GetMouseButtonDown(0) && !IsOverUI() && LineCreator.instance._can_draw)
         {
             if (_line == null)
             {
@@ -64,7 +64,7 @@ public class LineStraight : MonoBehaviour
             player.Charge();
 
         }
-        else if (Input.GetMouseButtonUp(0) && _line && !IsOverUI())
+        else if (Input.GetMouseButtonUp(0) && _line && !IsOverUI() )
         {
             if (Vector2.Distance(_line.GetPosition(0), _mouse_pos ) < 100)
             {
@@ -74,6 +74,7 @@ public class LineStraight : MonoBehaviour
             _mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             _mouse_pos.z = 0;
             ValidateLines();
+            LineCreator.instance._can_draw = false;
             _line = null;
 
         }
@@ -130,9 +131,6 @@ public class LineStraight : MonoBehaviour
             if (enemy.FindCollisions(_line) == 2)
             {
                 _shoold_destroy = false;
-                //Debug.Log(enemy._points_pos.Count);
-                /*_blood.transform.position = enemy._points_pos[4].transform.position;
-                _blood.Play();*/
             }
 
         }
@@ -148,6 +146,7 @@ public class LineStraight : MonoBehaviour
 
     public void CreateLine(bool from_pointer, Vector2 ini)
     {
+
 
         if (from_pointer)
         {
@@ -166,7 +165,6 @@ public class LineStraight : MonoBehaviour
         _line.endWidth = 1f;
         _line.useWorldSpace = true;
         _line.numCapVertices = 50;
-        //_line.colorGradient = _gradient;
         _current_lines++;
 
 

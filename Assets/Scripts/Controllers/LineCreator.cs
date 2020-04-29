@@ -10,7 +10,7 @@ public class LineCreator : MonoBehaviour
     public static LineCreator instance;
 
     public GameObject linePrefab;//,trailPrefab;
-    bool _can_draw;
+    public bool _can_draw;
 
     public Image _energy_bar;
 

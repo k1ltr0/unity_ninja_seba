@@ -21,6 +21,7 @@ public class Pointer : MonoBehaviour
     {
         if (collision.tag == "bonus")
         {
+            LineCreator.instance._can_draw = true;
             LineStraight.instance.CreateLine(true, collision.transform.position);
             collision.gameObject.SetActive(false);
             _algo.Play();
