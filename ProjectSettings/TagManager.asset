@@ -6,6 +6,7 @@ TagManager:
   tags:
   - bonus
   - line
+  - ui
   layers:
   - Default
   - TransparentFX

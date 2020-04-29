@@ -15,6 +15,8 @@ public class LineStraight : MonoBehaviour
     public Transform _pointer;
     public Gradient _gradient;
 
+    public GameObject point;
+
     public ParticleSystem _blood;
 
     public List<EnemyCollision> _enemies = new List<EnemyCollision>();
@@ -50,7 +52,6 @@ public class LineStraight : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && !IsOverUI())
         {
-
             if (_line == null)
             {
                 CreateLine(false, _mouse_pos);
@@ -177,23 +178,45 @@ public class LineStraight : MonoBehaviour
         _lines.Add(_line.gameObject);
     }
 
+    void OnDrawGizmos()
+    {
+        GameObject[] ui = GameObject.FindGameObjectsWithTag("ui");
+        Gizmos.color = Color.yellow;
+
+        foreach (GameObject button in ui)
+        {
+            RectTransform transform = button.GetComponent<RectTransform>();
+            Vector3 position = Camera.main.WorldToScreenPoint(transform.position);
+            Vector3 half = (transform.TransformVector(transform.sizeDelta) * 0.5f);
+            Gizmos.DrawSphere(transform.position - half, 5);
+            Gizmos.DrawSphere(transform.position + half, 5);
+        }
+    }
+
     public bool IsOverUI()
     {
+        GameObject[] ui = GameObject.FindGameObjectsWithTag("ui");
+        foreach (GameObject button in ui)
+        {
+            RectTransform transform = button.GetComponent<RectTransform>();
+            Vector3 position = Camera.main.WorldToScreenPoint(transform.position);
+            Vector3 half = (transform.TransformVector(transform.sizeDelta) * 0.5f);
+            Vector3 origin = transform.position - half;
+            Vector3 dest = transform.position + half;
+
+            if (
+                    Input.mousePosition.x > origin.x &&
+                    Input.mousePosition.x < dest.x &&
+                    Input.mousePosition.y > origin.y &&
+                    Input.mousePosition.y < dest.y
+                )
+            {
+                return true;
+            }
+        }
+
+        Debug.Log("outside");
         return false;
-        // GameObject[] ui = GameObject.FindGameObjectsWithTag("ui");
-        // bool is_over = false;
-
-        // for (int i = 0; i < ui.Length; i++)
-        // {
-        //     GameObject button = ui[i];
-        //     if (Input.mousePosition.x > button.transform.position.x &&
-        //             Input.mousePosition.y > button.transform.position.y)
-        //     {
-        //         return true;
-        //     }
-        // }
-
-        // return is_over;
     }
 
 }

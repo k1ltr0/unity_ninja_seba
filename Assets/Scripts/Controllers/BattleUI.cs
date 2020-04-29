@@ -25,11 +25,6 @@ public class BattleUI : MonoBehaviour
 
     public void EnemyTurn()
     {
-        /*foreach (GameObject item in playerHud.GetComponentsInChildren<GameObject>())
-        {
-            item.SetActive(false);
-        }*/
-
         playerHud.SetActive(false);
         battle_state.text = "Enemy turn";
 

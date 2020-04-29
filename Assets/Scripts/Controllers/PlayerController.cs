@@ -102,9 +102,8 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void PlayBlood() {
-
-        //_trail.gameObject.SetActive(false);
+    void PlayBlood()
+    {
         attack = false;
 
         foreach (ParticleSystem item in _blood_particles)
@@ -112,10 +111,4 @@ public class PlayerController : MonoBehaviour
             item.Play();
         }
     }
-
-
-
-
-    //iTween.MoveTo(gameObject, iTween.Hash("x", 2, "easeType", "easeInOutExpo", "loopType", "pingPong", "delay", .1));
-
 }
