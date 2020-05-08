@@ -16,12 +16,12 @@ public class BattleManager : MonoBehaviour
     {
         instance = this;
     }
+
     void Start()
     {
         state = BattleState.START;
         StartCoroutine(SetupBattle());
     }
-
 
     private void Update()
     {
@@ -43,7 +43,6 @@ public class BattleManager : MonoBehaviour
         BattleUI.instance.PlayerTurn();
         LineCreator.instance._can_draw = true;
         LineCreator.instance.UpdateBar(0);
-
     }
 
     IEnumerator EnemyTurn()
@@ -66,14 +65,11 @@ public class BattleManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(1);
-
-        
         StartCoroutine(PlayerTurn());
     }
 
     public void PlayerAttack()
     {
-
         StartCoroutine(SendDamage());
     }
 
@@ -85,13 +81,8 @@ public class BattleManager : MonoBehaviour
 
         for (int i = 0; i < _enemy.Count; i++)
         {
-            if (_enemy[i])
-
-                if (_enemy[i].currectHealth > 0)
-                {
-                    //Debug.Log(LineStraight.instance._lines.Count);
-                    _enemy[i].TakeDamage(_player[0].GetDamage());
-                }
+            if (_enemy[i] && _enemy[i].currectHealth > 0)
+                _enemy[i].TakeDamage(_player[0].GetDamage());
         }
 
         LineCreator.instance._can_draw = false;
@@ -113,8 +104,6 @@ public class BattleManager : MonoBehaviour
 
         state = BattleState.PLAYERTURN;
         CameraController.instance.Shake(.3f, 5, .65f);
-        
-        
     }
 
 }

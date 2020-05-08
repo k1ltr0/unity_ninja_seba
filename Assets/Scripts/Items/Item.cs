@@ -8,11 +8,8 @@ public class Item : ScriptableObject
     public int health =0;
     public bool isDefaultItem = false;
 
-    public virtual void Use() {
-
-
+    public virtual void Use()
+    {
         Inventory.instance.Use(this);
-
     }
-        
 }

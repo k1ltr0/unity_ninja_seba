@@ -14,19 +14,14 @@ public class LineStraight : MonoBehaviour
     public int _current_lines;
     public Transform _pointer;
     public Gradient _gradient;
-
     public GameObject point;
-
     public ParticleSystem _blood;
-
     public List<EnemyCollision> _enemies = new List<EnemyCollision>();
+    public List<GameObject> _lines = new List<GameObject>();
+    public PlayerController player;
 
     BattleManager battle_state;
-
-    public List<GameObject> _lines = new List<GameObject>();
     Transform _start, _end;
-
-    public PlayerController player;
 
     private void Awake()
     {
@@ -62,7 +57,6 @@ public class LineStraight : MonoBehaviour
             _line.SetPosition(0, _mouse_pos);
             _line.SetPosition(1, _mouse_pos);
             player.Charge();
-
         }
         else if (Input.GetMouseButtonUp(0) && _line && !IsOverUI() )
         {
@@ -76,7 +70,6 @@ public class LineStraight : MonoBehaviour
             ValidateLines();
             LineCreator.instance._can_draw = false;
             _line = null;
-
         }
         else if (Input.GetMouseButton(0) && _line)
         {
@@ -86,21 +79,14 @@ public class LineStraight : MonoBehaviour
             if (Vector2.Distance(_line.GetPosition(0), _mouse_pos) < 100)
             {
                 _line.SetPosition(1, _mouse_pos);
-
-                //_end.position = _mouse_pos;
-
-                //_line.GetComponent<Electric>().CalculatePoints(_line.GetPosition(0), _line.GetPosition(1), _line);
-
-
                 LineCreator.instance.UpdateBar(Vector2.Distance(_line.GetPosition(0), _mouse_pos));
                 _pointer.transform.position = _mouse_pos;
             }
         }
     }
 
-    public void ResetLines() {
-
-
+    public void ResetLines()
+    {
         foreach (GameObject item in _lines)
         {
             Destroy(item);
@@ -109,10 +95,9 @@ public class LineStraight : MonoBehaviour
         _lines.Clear();
     }
 
-    public void ResetLineBar(float used) {
-
+    public void ResetLineBar(float used)
+    {
         LineCreator.instance.UpdateBar(used);
-
     }
 
     public void DestroyLine(GameObject _line)
@@ -122,8 +107,8 @@ public class LineStraight : MonoBehaviour
         ResetLineBar(0);
     }
 
-    public void ValidateLines() {
-
+    public void ValidateLines()
+    {
         bool _shoold_destroy = true;
 
         foreach (EnemyCollision enemy in _enemies)
@@ -132,27 +117,20 @@ public class LineStraight : MonoBehaviour
             {
                 _shoold_destroy = false;
             }
-
         }
 
         if (_shoold_destroy)
         {
             DestroyLine(_line.gameObject);
-
         }
-
-
     }
 
     public void CreateLine(bool from_pointer, Vector2 ini)
     {
-
-
         if (from_pointer)
         {
             _line.SetPosition(1, ini);
             _line = null;
-
         }
 
         _line = new GameObject("Line" + _current_lines).AddComponent<LineRenderer>();
@@ -166,7 +144,6 @@ public class LineStraight : MonoBehaviour
         _line.useWorldSpace = true;
         _line.numCapVertices = 50;
         _current_lines++;
-
 
         if (from_pointer)
         {
@@ -215,5 +192,4 @@ public class LineStraight : MonoBehaviour
 
         return false;
     }
-
 }

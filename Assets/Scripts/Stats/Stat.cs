@@ -8,8 +8,8 @@ public class Stat
     [SerializeField]
     private int baseValue;
 
-    public int GetValue() {
-
+    public int GetValue()
+    {
         return baseValue;
     }
 }

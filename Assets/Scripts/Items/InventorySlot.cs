@@ -7,23 +7,22 @@ public class InventorySlot : MonoBehaviour
     Item item;
     public Image icon;
 
-
-    public void AddItem(Item newItem) {
+    public void AddItem(Item newItem)
+    {
         item = newItem;
         icon.sprite = item.icon;
         icon.enabled = true;
     }
 
-    public void ClearSlot() {
-
+    public void ClearSlot()
+    {
         item = null;
         icon.sprite = null;
         icon.enabled = false;
     }
 
-    public void UseItem() {
-
+    public void UseItem()
+    {
         Inventory.instance.Use(item);
-        //ClearSlot();
     }
 }

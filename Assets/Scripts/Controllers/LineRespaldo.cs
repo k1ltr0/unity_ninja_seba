@@ -3,32 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class LineRespaldo : MonoBehaviour
 {
     // Start is called before the first frame update
-
     public LineRenderer _line;
     public EdgeCollider2D _line_col;
     public int _large;
 
     List<Vector2> points;
 
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void UpdateLine(Vector2 mousePos)
     {
-
         if (points == null)
         {
             points = new List<Vector2>();
@@ -44,9 +29,7 @@ public class LineRespaldo : MonoBehaviour
 
     void SetPoint(Vector2 point)
     {
-
         points.Add(point);
-
         _line.positionCount = points.Count;
         _line.SetPosition(points.Count - 1, point);
 
@@ -62,7 +45,6 @@ public class LineRespaldo : MonoBehaviour
         if (collision.tag == "bonus")
         {
             collision.gameObject.SetActive(false);
-            //LineCreator.instance.CreateNewLine(true, collision.GetComponent<SpriteRenderer>().color);
         }
     }
 }

@@ -27,7 +27,5 @@ public class BattleUI : MonoBehaviour
     {
         playerHud.SetActive(false);
         battle_state.text = "Enemy turn";
-
-
     }
 }

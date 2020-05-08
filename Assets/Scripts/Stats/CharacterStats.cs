@@ -9,7 +9,6 @@ public class CharacterStats : MonoBehaviour
     public Stat damage;
     public Stat defense;
     public HealthBar health_bar;
-
     public EnemyCollision enemy_collision;
 
     void Start()
@@ -23,8 +22,8 @@ public class CharacterStats : MonoBehaviour
         health_bar.SetMaxHealth(currectHealth);
     }
 
-    public void TakeDamage(int damage) {
-
+    public void TakeDamage(int damage)
+    {
         float _current = currectHealth;
 
         damage -= defense.GetValue();
@@ -33,20 +32,14 @@ public class CharacterStats : MonoBehaviour
             currectHealth -= damage * enemy_collision.FindCollisions();
         else
             currectHealth -= damage;
-        //health_bar.SetHealth(currectHealth);
-
 
         SetLifeBar(_current, currectHealth);
-
 
         if (currectHealth <= 0)
         {
             Die();
             return;
         }
-
-
-
     }
 
     public void TakeHealth(int health)
@@ -57,39 +50,35 @@ public class CharacterStats : MonoBehaviour
         currectHealth = Mathf.Clamp(currectHealth,0, maxHealth);
 
         SetLifeBar(_current, currectHealth);
-
-        //health_bar.SetHealth(currectHealth);
     }
 
-    void Die() {
+    void Die()
+    {
         this.gameObject.SetActive(false);
     }
 
-    public int Attack() {
+    public int Attack()
+    {
         return damage.GetValue();
     }
 
-
-    void SetLifeBar(float _from , float _to) {
-
-
+    void SetLifeBar(float _from , float _to)
+    {
         iTween.ValueTo(gameObject, iTween.Hash(
-         "from", _from,
-         "to", _to,
-         "time", .5f,
-         "delay", .5f,
-         "onupdatetarget", gameObject,
-         "onupdate", "UpdateLifeBar",
-         "easetype", iTween.EaseType.easeOutSine
-         )
+            "from", _from,
+            "to", _to,
+            "time", .5f,
+            "delay", .5f,
+            "onupdatetarget", gameObject,
+            "onupdate", "UpdateLifeBar",
+            "easetype", iTween.EaseType.easeOutSine
+        )
         );
 
     }
-
 
     void UpdateLifeBar(float newValue)
     {
         health_bar.SetHealth(newValue);
     }
-
 }

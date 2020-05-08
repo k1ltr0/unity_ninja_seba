@@ -206,6 +206,5 @@ public class EnemyCollision : MonoBehaviour
         {
             int collisions = FindCollisions();
         }
-
     }
 }

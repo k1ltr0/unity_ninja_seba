@@ -8,14 +8,11 @@ public class LineCreator : MonoBehaviour
 {
     // Start is called before the first frame update
     public static LineCreator instance;
-
     public GameObject linePrefab;//,trailPrefab;
     public bool _can_draw;
-
     public Image _energy_bar;
 
     GameObject lineGo, trailGo;
-
     List<Line> _lines;
 
     void Awake()
@@ -26,10 +23,6 @@ public class LineCreator : MonoBehaviour
     void Start()
     {
         _can_draw = true;
-    }
-
-    void Update()
-    {
     }
 
     public void UpdateBar(float used)

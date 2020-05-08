@@ -5,16 +5,9 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public static Inventory instance;
-
-
-
     public List<Item> items = new List<Item>();
-
     public Item _item, _item_b;
-
     public PlayerController player;
-    
-
 
     private void Awake()
     {
@@ -22,7 +15,7 @@ public class Inventory : MonoBehaviour
     }
 
     public delegate void OnIntemChanged();
-    public OnIntemChanged onItemChangedCallback;  
+    public OnIntemChanged onItemChangedCallback;
 
     void Update()
     {
@@ -35,14 +28,6 @@ public class Inventory : MonoBehaviour
         {
             Add(_item_b);
         }
-
-        /*if (Input.GetKeyDown(KeyCode.U))
-        {
-            if (items.Count > 0)
-            {
-                Use(items[0]);
-            }
-        }*/
     }
 
     public void Add(Item item) {
@@ -58,7 +43,6 @@ public class Inventory : MonoBehaviour
         }
     }
 
-
     public void Remove(Item item)
     {
         items.Remove(item);
@@ -69,12 +53,9 @@ public class Inventory : MonoBehaviour
         }
     }
 
-
     public void Use(Item item) {
 
         player.TakeHealth(item.health);
         Remove(item);
-
-
     }
 }
