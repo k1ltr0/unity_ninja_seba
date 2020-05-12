@@ -12,7 +12,6 @@ public class Dragable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(isDragging);
         if (isDragging)
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(

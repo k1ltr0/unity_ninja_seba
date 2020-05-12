@@ -166,6 +166,18 @@ public class LineStraight : MonoBehaviour
             Gizmos.DrawSphere(transform.position - half, 5);
             Gizmos.DrawSphere(transform.position + half, 5);
         }
+
+        GameObject[] bonus = GameObject.FindGameObjectsWithTag("bonus");
+        Gizmos.color = Color.red;
+
+        foreach (GameObject button in bonus)
+        {
+            Transform transform = button.GetComponent<Transform>();
+            Vector3 position = Camera.main.WorldToScreenPoint(transform.position);
+            Vector3 half = Vector3.one * 0.05f;
+            Gizmos.DrawSphere(transform.position - half, 5);
+            Gizmos.DrawSphere(transform.position + half, 5);
+        }
     }
 
     public bool IsOverUI()
@@ -173,9 +185,29 @@ public class LineStraight : MonoBehaviour
         GameObject[] ui = GameObject.FindGameObjectsWithTag("ui");
         foreach (GameObject button in ui)
         {
-            RectTransform transform = button.GetComponent<RectTransform>();
+            Transform transform = button.GetComponent<Transform>();
             Vector3 position = Camera.main.WorldToScreenPoint(transform.position);
-            Vector3 half = (transform.TransformVector(transform.sizeDelta) * 0.5f);
+            Vector3 half = Vector3.one * 0.05f;
+            Vector3 origin = transform.position - half;
+            Vector3 dest = transform.position + half;
+
+            if (
+                    Input.mousePosition.x > origin.x &&
+                    Input.mousePosition.x < dest.x &&
+                    Input.mousePosition.y > origin.y &&
+                    Input.mousePosition.y < dest.y
+                )
+            {
+                return true;
+            }
+        }
+
+        GameObject[] bonus = GameObject.FindGameObjectsWithTag("bonus");
+        foreach (GameObject button in bonus)
+        {
+            Transform transform = button.GetComponent<Transform>();
+            Vector3 position = Camera.main.WorldToScreenPoint(transform.position);
+            Vector3 half = Vector3.one * 0.05f;
             Vector3 origin = transform.position - half;
             Vector3 dest = transform.position + half;
 

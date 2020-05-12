@@ -18722,6 +18722,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: powerup1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2922573893313120083, guid: 08a8d564b4c8e452ea96d5ea6499db59,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922573893313120083, guid: 08a8d564b4c8e452ea96d5ea6499db59,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2922573893313120085, guid: 08a8d564b4c8e452ea96d5ea6499db59,
         type: 3}
       propertyPath: m_LocalPosition.x
