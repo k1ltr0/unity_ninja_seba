@@ -1,0 +1,1268 @@
+fileFormatVersion: 2
+guid: b3c759c016dbf6141bd88f26b147eac1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2798584478942179420
+    second: MC_Swordsman_Anim 2_#[256,256]_0
+  - first:
+      213: -3584233698625010306
+    second: MC_Swordsman_Anim 2_#[256,256]_1
+  - first:
+      213: -2108388739120715453
+    second: MC_Swordsman_Anim 2_#[256,256]_2
+  - first:
+      213: -607709349173021297
+    second: MC_Swordsman_Anim 2_#[256,256]_3
+  - first:
+      213: 1209090770569788705
+    second: MC_Swordsman_Anim 2_#[256,256]_4
+  - first:
+      213: 7603348977839279545
+    second: MC_Swordsman_Anim 2_#[256,256]_5
+  - first:
+      213: -3069764673159629421
+    second: MC_Swordsman_Anim 2_#[256,256]_6
+  - first:
+      213: -2042834171120533115
+    second: MC_Swordsman_Anim 2_#[256,256]_7
+  - first:
+      213: -4237276818371046182
+    second: MC_Swordsman_Anim 2_#[256,256]_8
+  - first:
+      213: 5319387363696570618
+    second: MC_Swordsman_Anim 2_#[256,256]_9
+  - first:
+      213: 7332724366205122679
+    second: MC_Swordsman_Anim 2_#[256,256]_10
+  - first:
+      213: -7078880606943080696
+    second: MC_Swordsman_Anim 2_#[256,256]_11
+  - first:
+      213: -1361700803393361069
+    second: MC_Swordsman_Anim 2_#[256,256]_12
+  - first:
+      213: 6347403576211506790
+    second: MC_Swordsman_Anim 2_#[256,256]_13
+  - first:
+      213: 1983230253482550611
+    second: MC_Swordsman_Anim 2_#[256,256]_14
+  - first:
+      213: -5949573029355492933
+    second: MC_Swordsman_Anim 2_#[256,256]_15
+  - first:
+      213: -3957283526042222792
+    second: MC_Swordsman_Anim 2_#[256,256]_16
+  - first:
+      213: -783257363034651667
+    second: MC_Swordsman_Anim 2_#[256,256]_17
+  - first:
+      213: 7670005468282610551
+    second: MC_Swordsman_Anim 2_#[256,256]_18
+  - first:
+      213: 6508167156898080100
+    second: MC_Swordsman_Anim 2_#[256,256]_19
+  - first:
+      213: -3780081162017208763
+    second: MC_Swordsman_Anim 2_#[256,256]_20
+  - first:
+      213: -955209731608558541
+    second: MC_Swordsman_Anim 2_#[256,256]_21
+  - first:
+      213: -4748555483012415754
+    second: MC_Swordsman_Anim 2_#[256,256]_22
+  - first:
+      213: -1034821716286924990
+    second: MC_Swordsman_Anim 2_#[256,256]_23
+  - first:
+      213: 2893855915413891996
+    second: MC_Swordsman_Anim 2_#[256,256]_24
+  - first:
+      213: -2092751327590835399
+    second: MC_Swordsman_Anim 2_#[256,256]_25
+  - first:
+      213: -6888221562026570911
+    second: MC_Swordsman_Anim 2_#[256,256]_26
+  - first:
+      213: -594603689563286464
+    second: MC_Swordsman_Anim 2_#[256,256]_27
+  - first:
+      213: 7568862663931589406
+    second: MC_Swordsman_Anim 2_#[256,256]_28
+  - first:
+      213: 6890670893045858070
+    second: MC_Swordsman_Anim 2_#[256,256]_29
+  - first:
+      213: 6964792005995086417
+    second: MC_Swordsman_Anim 2_#[256,256]_30
+  - first:
+      213: 3919197381760712579
+    second: MC_Swordsman_Anim 2_#[256,256]_31
+  - first:
+      213: 3301418057822697347
+    second: MC_Swordsman_Anim 2_#[256,256]_32
+  - first:
+      213: 6219652305480862698
+    second: MC_Swordsman_Anim 2_#[256,256]_33
+  - first:
+      213: -2223784329106448348
+    second: MC_Swordsman_Anim 2_#[256,256]_34
+  - first:
+      213: 3017979135813385577
+    second: MC_Swordsman_Anim 2_#[256,256]_35
+  - first:
+      213: 7386191329432098423
+    second: MC_Swordsman_Anim 2_#[256,256]_36
+  - first:
+      213: 4127930784358596651
+    second: MC_Swordsman_Anim 2_#[256,256]_37
+  - first:
+      213: 442580617381134898
+    second: MC_Swordsman_Anim 2_#[256,256]_38
+  - first:
+      213: 2271645796674864261
+    second: MC_Swordsman_Anim 2_#[256,256]_39
+  - first:
+      213: 3738756181270345955
+    second: MC_Swordsman_Anim 2_#[256,256]_40
+  - first:
+      213: 3405948059379255663
+    second: MC_Swordsman_Anim 2_#[256,256]_41
+  - first:
+      213: -4575572071104150355
+    second: MC_Swordsman_Anim 2_#[256,256]_42
+  - first:
+      213: -4699943457562218609
+    second: MC_Swordsman_Anim 2_#[256,256]_43
+  - first:
+      213: 2719583844937516987
+    second: MC_Swordsman_Anim 2_#[256,256]_44
+  - first:
+      213: 896114641320444965
+    second: MC_Swordsman_Anim 2_#[256,256]_45
+  - first:
+      213: -873388770900411353
+    second: MC_Swordsman_Anim 2_#[256,256]_46
+  - first:
+      213: -8617843298810597434
+    second: MC_Swordsman_Anim 2_#[256,256]_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1809
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afcab27e3e6929d0800000000000000
+      internalID: -2798584478942179420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1809
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75c871f07e324ec0800000000000000
+      internalID: -3584233698625010306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_2
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1809
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349a64ccc9f7db2e0800000000000000
+      internalID: -2108388739120715453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_3
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1809
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85bbd3119bf097f0800000000000000
+      internalID: -607709349173021297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_4
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1809
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12df30956ad87c010800000000000000
+      internalID: 1209090770569788705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_5
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1809
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd807f6c95848960800000000000000
+      internalID: 7603348977839279545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1553
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395f6484b410665d0800000000000000
+      internalID: -3069764673159629421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_7
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1553
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581c45f052566a3e0800000000000000
+      internalID: -2042834171120533115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_8
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1553
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad41ff90f2b2235c0800000000000000
+      internalID: -4237276818371046182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_9
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1553
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0f5dbbf9242d940800000000000000
+      internalID: 5319387363696570618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_10
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1553
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778f18be5f113c560800000000000000
+      internalID: 7332724366205122679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_11
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1553
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f81cfe793c2cd90800000000000000
+      internalID: -7078880606943080696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1297
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bef5b75544a1de0800000000000000
+      internalID: -1361700803393361069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1297
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666812e2ce1861850800000000000000
+      internalID: 6347403576211506790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_14
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1297
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355a2ae6869d58b10800000000000000
+      internalID: 1983230253482550611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_15
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1297
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9650c1adede6da0800000000000000
+      internalID: -5949573029355492933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_16
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1297
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f7fb28997e419c0800000000000000
+      internalID: -3957283526042222792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_17
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1297
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de34c94049f4125f0800000000000000
+      internalID: -783257363034651667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_18
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1041
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773e9420655517a60800000000000000
+      internalID: 7670005468282610551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_19
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1041
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46526c52c87a15a50800000000000000
+      internalID: 6508167156898080100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_20
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1041
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54681dbf5347a8bc0800000000000000
+      internalID: -3780081162017208763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_21
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1041
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334c97d5fc96eb2f0800000000000000
+      internalID: -955209731608558541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_22
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1041
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6febfc672fdb91eb0800000000000000
+      internalID: -4748555483012415754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_23
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1041
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2479bdab12393a1f0800000000000000
+      internalID: -1034821716286924990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_24
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 785
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b686d6f9a092820800000000000000
+      internalID: 2893855915413891996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_25
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 785
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b98b361cd05f2e0800000000000000
+      internalID: -2092751327590835399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_26
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 785
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b48351cfe1860a0800000000000000
+      internalID: -6888221562026570911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_27
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 785
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044917d381b8fb7f0800000000000000
+      internalID: -594603689563286464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_28
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 785
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13fb55cd700a0960800000000000000
+      internalID: 7568862663931589406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_29
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 785
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f3f1c3ba490af50800000000000000
+      internalID: 6890670893045858070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_30
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 529
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15241dbad69e7a060800000000000000
+      internalID: 6964792005995086417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_31
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 529
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ffc700149c36630800000000000000
+      internalID: 3919197381760712579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_32
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 529
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387f49f5b3ef0dd20800000000000000
+      internalID: 3301418057822697347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_33
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 529
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb40a691d4a05650800000000000000
+      internalID: 6219652305480862698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_34
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 529
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420a78e4fe78321e0800000000000000
+      internalID: -2223784329106448348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_35
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 529
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d72b9b80402e920800000000000000
+      internalID: 3017979135813385577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_36
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 273
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776ded161e5018660800000000000000
+      internalID: 7386191329432098423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_37
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 273
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20081b7d2b594930800000000000000
+      internalID: 4127930784358596651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_38
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 273
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232c9730abc542600800000000000000
+      internalID: 442580617381134898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_39
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 273
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584805ef0d1868f10800000000000000
+      internalID: 2271645796674864261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_40
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 273
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e83a6620fab2e330800000000000000
+      internalID: 3738756181270345955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_41
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 273
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f694bbae6bb544f20800000000000000
+      internalID: 3405948059379255663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_42
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 17
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da483a9917d4080c0800000000000000
+      internalID: -4575572071104150355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_43
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 17
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f2593a35276ceb0800000000000000
+      internalID: -4699943457562218609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_44
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 17
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb744661917edb520800000000000000
+      internalID: 2719583844937516987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_45
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 17
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5248ee9b483af6c00800000000000000
+      internalID: 896114641320444965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_46
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 17
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c7aaf4a8911e3f0800000000000000
+      internalID: -873388770900411353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Swordsman_Anim 2_#[256,256]_47
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 17
+        width: 224
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfe964dd25476880800000000000000
+      internalID: -8617843298810597434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

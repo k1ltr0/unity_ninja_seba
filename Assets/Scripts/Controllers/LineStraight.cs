@@ -64,11 +64,11 @@ public class LineStraight : MonoBehaviour
             {
                 _line.SetPosition(1, _mouse_pos);
             }
-
+            LineCreator.instance._can_draw = false;
             _mouse_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             _mouse_pos.z = 0;
             ValidateLines();
-            LineCreator.instance._can_draw = false;
+
             _line = null;
         }
         else if (Input.GetMouseButton(0) && _line)
@@ -102,9 +102,16 @@ public class LineStraight : MonoBehaviour
 
     public void DestroyLine(GameObject _line)
     {
+        if (_lines.Count < 1)
+        {
+            LineCreator.instance._can_draw = true;
+
+        }
         Destroy(_line);
         _lines.Remove(_line);
         ResetLineBar(0);
+
+        Debug.Log("RESET");
     }
 
     public void ValidateLines()

@@ -30,6 +30,13 @@ public class PlayerController : MonoBehaviour
         stats.TakeHealth(health);
     }
 
+    public void TakeEnergy(int energy)
+    {
+        /*_health_particle.Play();
+        stats.TakeHealth(health);*/
+        Debug.Log("Use Energy");
+    }
+
     public void Charge()
     {
         _charge_particle.Play();

@@ -55,7 +55,19 @@ public class Inventory : MonoBehaviour
 
     public void Use(Item item) {
 
-        player.TakeHealth(item.health);
+        switch (item.type)
+        {
+            case TypeItem.Health:
+                player.TakeHealth(item.quantity);
+                break;
+            case TypeItem.Energy:
+                player.TakeEnergy(item.quantity);
+                break;
+            default:
+                break;
+        }
+
+        
         Remove(item);
     }
 }

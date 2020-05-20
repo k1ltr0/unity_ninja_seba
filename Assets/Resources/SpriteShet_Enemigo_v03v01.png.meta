@@ -1,0 +1,1124 @@
+fileFormatVersion: 2
+guid: ab88fb4fc699a8c4bae8b56796c479b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3612999647222043155
+    second: SpriteShet_Enemigo_v03v01_0
+  - first:
+      213: 5954292135343839130
+    second: SpriteShet_Enemigo_v03v01_1
+  - first:
+      213: 644051668348949091
+    second: SpriteShet_Enemigo_v03v01_2
+  - first:
+      213: 1317879090563062927
+    second: SpriteShet_Enemigo_v03v01_3
+  - first:
+      213: 7539534297469451412
+    second: SpriteShet_Enemigo_v03v01_4
+  - first:
+      213: -4329980887201441657
+    second: SpriteShet_Enemigo_v03v01_5
+  - first:
+      213: 2870391612889805804
+    second: SpriteShet_Enemigo_v03v01_6
+  - first:
+      213: 4019241371072453833
+    second: SpriteShet_Enemigo_v03v01_7
+  - first:
+      213: -6590022801271578152
+    second: SpriteShet_Enemigo_v03v01_8
+  - first:
+      213: -2352228783419188239
+    second: SpriteShet_Enemigo_v03v01_9
+  - first:
+      213: -2276370219188723665
+    second: SpriteShet_Enemigo_v03v01_10
+  - first:
+      213: -7323305570066966194
+    second: SpriteShet_Enemigo_v03v01_11
+  - first:
+      213: 5573937438630839243
+    second: SpriteShet_Enemigo_v03v01_12
+  - first:
+      213: 8926209851104983902
+    second: SpriteShet_Enemigo_v03v01_13
+  - first:
+      213: -3699787082168126734
+    second: SpriteShet_Enemigo_v03v01_14
+  - first:
+      213: 6601873330966316321
+    second: SpriteShet_Enemigo_v03v01_15
+  - first:
+      213: -6295555118140511470
+    second: SpriteShet_Enemigo_v03v01_16
+  - first:
+      213: -1230387604036592933
+    second: SpriteShet_Enemigo_v03v01_17
+  - first:
+      213: 1160234422445625607
+    second: SpriteShet_Enemigo_v03v01_18
+  - first:
+      213: -9014118328012629757
+    second: SpriteShet_Enemigo_v03v01_19
+  - first:
+      213: -8094087850193177589
+    second: SpriteShet_Enemigo_v03v01_20
+  - first:
+      213: -7256181456785760912
+    second: SpriteShet_Enemigo_v03v01_21
+  - first:
+      213: -1319409079235748994
+    second: SpriteShet_Enemigo_v03v01_22
+  - first:
+      213: 4161952739996937487
+    second: SpriteShet_Enemigo_v03v01_23
+  - first:
+      213: 1334331049092329427
+    second: SpriteShet_Enemigo_v03v01_24
+  - first:
+      213: 1937835473314338708
+    second: SpriteShet_Enemigo_v03v01_25
+  - first:
+      213: 5052047589554616047
+    second: SpriteShet_Enemigo_v03v01_26
+  - first:
+      213: 5521772602243357487
+    second: SpriteShet_Enemigo_v03v01_27
+  - first:
+      213: -6335073084880862871
+    second: SpriteShet_Enemigo_v03v01_28
+  - first:
+      213: 3901829343983788603
+    second: SpriteShet_Enemigo_v03v01_29
+  - first:
+      213: -2937813151592175523
+    second: SpriteShet_Enemigo_v03v01_30
+  - first:
+      213: -2374306601361284660
+    second: SpriteShet_Enemigo_v03v01_31
+  - first:
+      213: -8749437245115419207
+    second: SpriteShet_Enemigo_v03v01_32
+  - first:
+      213: -2200573332335482294
+    second: SpriteShet_Enemigo_v03v01_33
+  - first:
+      213: 4143016821924874892
+    second: SpriteShet_Enemigo_v03v01_34
+  - first:
+      213: 802927768893166293
+    second: SpriteShet_Enemigo_v03v01_35
+  - first:
+      213: -8157397248673035622
+    second: SpriteShet_Enemigo_v03v01_36
+  - first:
+      213: 4744077974437624448
+    second: SpriteShet_Enemigo_v03v01_37
+  - first:
+      213: 3692648343977612328
+    second: SpriteShet_Enemigo_v03v01_38
+  - first:
+      213: 7126399405621657454
+    second: SpriteShet_Enemigo_v03v01_39
+  - first:
+      213: -868996046412694565
+    second: SpriteShet_Enemigo_v03v01_40
+  - first:
+      213: -2639685241876857777
+    second: SpriteShet_Enemigo_v03v01_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 879
+        width: 171
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dede7bd96fb0cddc0800000000000000
+      internalID: -3612999647222043155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_1
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 879
+        width: 171
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9752106625e1a250800000000000000
+      internalID: 5954292135343839130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_2
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 878
+        width: 171
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362dfec749120f800800000000000000
+      internalID: 644051668348949091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_3
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 877
+        width: 171
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c1de9ec0c0a4210800000000000000
+      internalID: 1317879090563062927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_4
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 876
+        width: 171
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c7a845f7ec1a860800000000000000
+      internalID: 7539534297469451412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_5
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 875
+        width: 172
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78890260351d8e3c0800000000000000
+      internalID: -4329980887201441657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_6
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 873
+        width: 173
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3be84c6fda5d720800000000000000
+      internalID: 2870391612889805804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_7
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 872
+        width: 174
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccd35d6bb637c730800000000000000
+      internalID: 4019241371072453833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_8
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 871
+        width: 175
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1ab7c7d298b84a0800000000000000
+      internalID: -6590022801271578152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 656
+        width: 175
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb99d552643b5fd0800000000000000
+      internalID: -2352228783419188239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_10
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 655
+        width: 180
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f206afba855b860e0800000000000000
+      internalID: -2276370219188723665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_11
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 655
+        width: 177
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49d48272646e5a90800000000000000
+      internalID: -7323305570066966194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_12
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 654
+        width: 178
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc387d5819a9a5d40800000000000000
+      internalID: 5573937438630839243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_13
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 654
+        width: 184
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b74b5019440eb70800000000000000
+      internalID: 8926209851104983902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_14
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 654
+        width: 180
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f23ac64047b7acc0800000000000000
+      internalID: -3699787082168126734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_15
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 654
+        width: 181
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1254f58f0d09e9b50800000000000000
+      internalID: 6601873330966316321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_16
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 654
+        width: 181
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ba75fa9f1b1a8a0800000000000000
+      internalID: -6295555118140511470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_17
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 654
+        width: 182
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdada553ef8cceee0800000000000000
+      internalID: -1230387604036592933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_18
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 437
+        width: 183
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7015d0e5f0bf91010800000000000000
+      internalID: 1160234422445625607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_19
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 437
+        width: 184
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3091877b32b67e280800000000000000
+      internalID: -9014118328012629757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_20
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 437
+        width: 184
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b043e6c0cf50caf80800000000000000
+      internalID: -8094087850193177589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_21
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 437
+        width: 183
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d1282f86ddc4b90800000000000000
+      internalID: -7256181456785760912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_22
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 437
+        width: 183
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b5ab6de6480bde0800000000000000
+      internalID: -1319409079235748994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_23
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 437
+        width: 182
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d2b7f47f932c930800000000000000
+      internalID: 4161952739996937487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_24
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 437
+        width: 181
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df2ce1050f748210800000000000000
+      internalID: 1334331049092329427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_25
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 436
+        width: 181
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4975d0c881394ea10800000000000000
+      internalID: 1937835473314338708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_26
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 437
+        width: 180
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe675cb048a7c1640800000000000000
+      internalID: 5052047589554616047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_27
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 223
+        width: 178
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b13371de641ac40800000000000000
+      internalID: 5521772602243357487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_28
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 223
+        width: 178
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961c98d089c4518a0800000000000000
+      internalID: -6335073084880862871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_29
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 224
+        width: 177
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3269569d15162630800000000000000
+      internalID: 3901829343983788603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_30
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 224
+        width: 176
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58a0eaf08aca37d0800000000000000
+      internalID: -2937813151592175523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_31
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 225
+        width: 176
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1eef5c9b4cc0fd0800000000000000
+      internalID: -2374306601361284660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_32
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 226
+        width: 175
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5b25c9e21c39680800000000000000
+      internalID: -8749437245115419207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_33
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 226
+        width: 174
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a22ff963ef571e0800000000000000
+      internalID: -2200573332335482294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_34
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 227
+        width: 173
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8acc4159d3fe7930800000000000000
+      internalID: 4143016821924874892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_35
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 229
+        width: 172
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d29c2d3d82942b00800000000000000
+      internalID: 802927768893166293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_36
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 16
+        width: 172
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a481d0c6a1bce80800000000000000
+      internalID: -8157397248673035622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_37
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 17
+        width: 172
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08afb1558c956d140800000000000000
+      internalID: 4744077974437624448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_38
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 18
+        width: 171
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8245837ba1cee3330800000000000000
+      internalID: 3692648343977612328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_39
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 19
+        width: 171
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f32ab808e06e260800000000000000
+      internalID: 7126399405621657454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_40
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 19
+        width: 171
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb3a5e23b4b0f3f0800000000000000
+      internalID: -868996046412694565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteShet_Enemigo_v03v01_41
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 19
+        width: 171
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cb6171244fd5bd0800000000000000
+      internalID: -2639685241876857777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
