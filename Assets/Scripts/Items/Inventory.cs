@@ -67,7 +67,6 @@ public class Inventory : MonoBehaviour
                 break;
         }
 
-        
         Remove(item);
     }
 }

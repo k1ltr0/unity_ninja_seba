@@ -10,8 +10,15 @@ public class Item : ScriptableObject
     public int quantity = 0;
     public bool isDefaultItem = false;
 
+<<<<<<< HEAD
     public virtual void Use()
     {
+=======
+
+    public virtual void Use() {
+
+
+>>>>>>> Se agregan sprites y wea
         Inventory.instance.Use(this);
     }
 }
