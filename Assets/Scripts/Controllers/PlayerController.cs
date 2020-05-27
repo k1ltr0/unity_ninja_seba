@@ -12,11 +12,39 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem _health_particle,_attack_particle, _back_particle, _charge_particle,_blood_particle;
     public TrailRenderer _trail;
 
-    List<ParticleSystem> _blood_particles = new List<ParticleSystem>();
+    public CharacterStats _simple_target;
+
+    bool simple;
 
     void Awake()
     {
         instance = this;
+    }
+
+    private void Update()
+    {
+        if (simple)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Target"));
+
+                if (hit.collider != null)
+                {
+                    Debug.Log("ataque simple");
+
+                    NormalAttack(hit.transform);
+                    _simple_target = hit.transform.GetComponent<CharacterStats>();
+                }
+                else {
+                    Debug.Log("nope");
+                    //CancelAttack();
+
+                }
+
+
+            }
+        }
     }
 
     public void TakeDamage(int damage)
@@ -47,11 +75,40 @@ public class PlayerController : MonoBehaviour
         return stats.Attack();
     }
 
-    public void  Attack()
+    public void  Attack(bool is_simple)
     {
         _charge_particle.Stop();
         attack = true;
-        StartCoroutine(AttackSecuence());
+        if (!is_simple)
+        {
+            StartCoroutine(AttackSecuence());
+        }
+        else {
+            Debug.Log("No puede hacer lineas");
+            LineCreator.instance._can_draw = false;
+            simple = true;
+        }
+    }
+
+    /*public void CancelSimpleAttack() {
+
+        simple = false;
+        LineCreator.instance._can_draw = true;
+    }*/
+
+    public void NormalAttack(Transform _target) {
+
+        this.GetComponent<SimpleAttackAnim>().Attack(_target);
+        Invoke("PlayBlood",  .5f);
+    }
+
+    void CancelAttack() {
+
+        simple = false;
+        _trail.gameObject.SetActive(false);
+        attack = false;
+        LineCreator.instance._can_draw = true;
+        _charge_particle.Stop();
     }
 
     IEnumerator AttackSecuence()
@@ -89,7 +146,7 @@ public class PlayerController : MonoBehaviour
     void PlayBlood()
     {
         attack = false;
-
+        simple = false;
         foreach (ParticleSystem item in _blood_particles)
         {
             item.Play();

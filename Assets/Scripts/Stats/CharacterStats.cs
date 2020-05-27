@@ -42,6 +42,29 @@ public class CharacterStats : MonoBehaviour
         }
     }
 
+    public void TakeSimpleDamage(int damage)
+    {
+
+        float _current = currectHealth;
+
+        damage -= defense.GetValue();
+        damage = Mathf.Clamp(damage, 0, int.MaxValue);
+        currectHealth -= damage;
+
+
+        SetLifeBar(_current, currectHealth);
+
+
+        if (currectHealth <= 0)
+        {
+            Die();
+            return;
+        }
+
+
+
+    }
+
     public void TakeHealth(int health)
     {
         float _current = currectHealth;

@@ -102,7 +102,9 @@ public class LineStraight : MonoBehaviour
 
     public void DestroyLine(GameObject _line)
     {
-        if (_lines.Count < 1)
+
+
+        if (_lines.Count <= 1)
         {
             LineCreator.instance._can_draw = true;
 
@@ -110,8 +112,8 @@ public class LineStraight : MonoBehaviour
         Destroy(_line);
         _lines.Remove(_line);
         ResetLineBar(0);
+        Debug.Log("RESET " + LineCreator.instance._can_draw);
 
-        Debug.Log("RESET");
     }
 
     public void ValidateLines()

@@ -7,7 +7,19 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update}
     public CharacterStats stats;
 
-    public void TakeDamage(int damage)
+
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void TakeDamage(int damage , bool is_simple)
     {
         stats.TakeDamage(damage);
     }

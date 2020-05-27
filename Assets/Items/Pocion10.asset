@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Pocion 10
   icon: {fileID: 21300000, guid: 522ea63c92dffbe479141291968c05ce, type: 3}
-  type: 1
-  quantity: 0
+  type: 0
+  quantity: 50
   isDefaultItem: 0

@@ -58,7 +58,7 @@ public class BattleManager : MonoBehaviour
                     if (_enemy[i].currectHealth > 0)
                     {
                         EnemyAttack(_enemy[i]);
-                        _enemy[i].GetComponent<SimpleAttackAnim>().Attack();
+                        _enemy[i].GetComponent<SimpleAttackAnim>().Attack(_player[0].transform);
                     }
                 yield return new WaitForSeconds(1f);
             }
@@ -70,20 +70,53 @@ public class BattleManager : MonoBehaviour
 
     public void PlayerAttack()
     {
+<<<<<<< HEAD
         StartCoroutine(SendDamage());
+=======
+
+        StartCoroutine(SendDamage(false));
+>>>>>>> Se integra ataque simple
     }
 
-    IEnumerator SendDamage()
+    public void PlayerSimpleAttack()
     {
-        _player[0].Attack();
+        BattleUI.instance.TooglePlayerHud(false);
+        _player[0].Attack(true);
+        Debug.Log("simple");
+        StartCoroutine(SendDamage(true));
+    }
+
+    IEnumerator SendDamage(bool is_simple)
+    {
+        _player[0].Attack(is_simple);
 
         yield return new WaitWhile(() => _player[0].attack);
 
-        for (int i = 0; i < _enemy.Count; i++)
+        if (!is_simple)
         {
+<<<<<<< HEAD
             if (_enemy[i] && _enemy[i].currectHealth > 0)
                 _enemy[i].TakeDamage(_player[0].GetDamage());
+=======
+            for (int i = 0; i < _enemy.Count; i++)
+            {
+                if (_enemy[i])
+
+                    if (_enemy[i].currectHealth > 0)
+                    {
+                        //Debug.Log(LineStraight.instance._lines.Count);
+                        _enemy[i].TakeDamage(_player[0].GetDamage());
+                    }
+            }
         }
+        else {
+
+            //_enemy[_player[0]._simple_target].TakeSimpleDamage(_player[0].GetDamage());
+            _player[0]._simple_target.TakeSimpleDamage(_player[0].GetDamage());
+
+>>>>>>> Se integra ataque simple
+        }
+       
 
         LineCreator.instance._can_draw = false;
         state = BattleState.ENEMYTURN;
