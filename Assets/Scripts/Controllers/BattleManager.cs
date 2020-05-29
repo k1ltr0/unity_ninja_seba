@@ -70,12 +70,8 @@ public class BattleManager : MonoBehaviour
 
     public void PlayerAttack()
     {
-<<<<<<< HEAD
-        StartCoroutine(SendDamage());
-=======
 
         StartCoroutine(SendDamage(false));
->>>>>>> Se integra ataque simple
     }
 
     public void PlayerSimpleAttack()
@@ -94,10 +90,6 @@ public class BattleManager : MonoBehaviour
 
         if (!is_simple)
         {
-<<<<<<< HEAD
-            if (_enemy[i] && _enemy[i].currectHealth > 0)
-                _enemy[i].TakeDamage(_player[0].GetDamage());
-=======
             for (int i = 0; i < _enemy.Count; i++)
             {
                 if (_enemy[i])
@@ -114,9 +106,8 @@ public class BattleManager : MonoBehaviour
             //_enemy[_player[0]._simple_target].TakeSimpleDamage(_player[0].GetDamage());
             _player[0]._simple_target.TakeSimpleDamage(_player[0].GetDamage());
 
->>>>>>> Se integra ataque simple
         }
-       
+
 
         LineCreator.instance._can_draw = false;
         state = BattleState.ENEMYTURN;
